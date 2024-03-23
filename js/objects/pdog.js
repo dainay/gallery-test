@@ -25,12 +25,12 @@ export const loadPdogModel = (scene) => {
       pdog.scale.set(scale, scale, scale);
 
       // Iterate through all the meshes in the pdog and update their materials
-      // pdog.traverse((child) => {
-      //   if (child.isMesh) {
-      //     child.material.metalness = 0.2;
+      pdog.traverse((child) => {
+        if (child.isMesh) {
+          child.material.metalness = 0;
          
-      //   }
-      // });
+        }
+      });
 
       // Add the pdog to the scene
       scene.add(pdog);

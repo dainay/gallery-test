@@ -8,12 +8,15 @@ import { setupFloor } from "./js/floor.js";
 import { createCeiling } from "./js/ceiling.js";
 import { createBoundingBoxes } from "./js/boundingBox.js";
 import { setupRendering } from "./js/rendering.js";
-import { setupEventListeners } from "./js/eventListeners.js";
+import { setupEventListeners, lightingOn } from "./js/eventListeners.js";
 import { addObjectsToScene } from "./js/sceneHelpers.js";
 import { setupPlayButton } from "./js/menu.js";
 // import { setupAudio } from "./js/audioGuide.js";
 import { clickHandling } from "./js/clickHandling.js";
 import { setupVR } from "./js/VRSupport.js";
+
+
+
 import { loadDresserModel } from "./js/objects/dresser.js";
  
 import { loadWindowModel } from "./js/objects/window.js";
@@ -23,7 +26,10 @@ import { loadBookshelf2Model } from "./js/objects/bookshelf2.js";
 import { loadFireplaceModel } from "./js/objects/fireplace.js";
 import { loadPainting1Model } from "./js/objects/painting1.js";
 import { loadPainting2Model } from "./js/objects/painting2.js";
-import { loadPaintingtopModel } from "./js/objects/paintingtop.js";
+import { loadPtopModel } from "./js/objects/ptop.js";
+
+import { loadWalllightModel } from "./js/objects/walllight.js";
+import { loadStickModel } from "./js/objects/stick.js";
 
 import { loadPaintingcowModel } from "./js/objects/painting-cow.js";
 import { loadChandleModel } from "./js/objects/chandle.js";
@@ -62,9 +68,11 @@ createBoundingBoxes(paintings);
 
 addObjectsToScene(scene, paintings);
 
+lightingOn(scene, camera);
+
 setupPlayButton(controls);
 
-setupEventListeners(controls, camera);
+setupEventListeners(controls, camera, scene);
 
 clickHandling(renderer, camera, paintings);
 
@@ -100,7 +108,9 @@ loadPianoModel(scene);
 loadBirdModel(scene); 
 loadPainting1Model(scene); 
 loadPainting2Model(scene); 
-loadPaintingtopModel(scene); 
+loadPtopModel(scene); 
+loadWalllightModel(scene); 
+loadStickModel(scene); 
  
  
 //room left
@@ -170,6 +180,8 @@ function animate() {
   animate();
 
  
+
+
  
 
 setupVR(renderer);

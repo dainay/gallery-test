@@ -1,6 +1,7 @@
 import { keysPressed } from "./movement.js"; // import the keysPressed object
 import { showMenu, hideMenu } from "./menu.js"; // import the showMenu function
 import { startAudio, stopAudio } from "./audioGuide.js";
+import * as THREE from "three";
 
 let lockPointer = true;
 let showMenuOnUnlock = false;
@@ -12,7 +13,7 @@ export const setupEventListeners = (controls, camera, scene) => {
   // add the event listeners to the document which is the whole page
   document.addEventListener(
     "keydown",
-    (event) => onKeyDown(event, controls, camera),
+    (event) => onKeyDown(event, controls, camera, scene),
     false
   );
   document.addEventListener(
@@ -43,7 +44,7 @@ function togglePointerLock(controls) {
   lockPointer = !lockPointer; // toggle the lockPointer variable
 }
 
-function onKeyDown(event, controls, camera) {
+function onKeyDown(event, controls, camera, scene) {
   // event is the event object that has the key property
   if (event.key in keysPressed) {
     // check if the key pressed by the user is in the keysPressed object
@@ -90,6 +91,13 @@ if (document.querySelector("#object-info2").style.display = "block"){
     startAudio(); // start the audio guide
   }
 
+
+ 
+        
+        
+   
+ 
+
   if (event.key === "p") {
     // if the "s" key is pressed
     stopAudio(); // stop the audio guide
@@ -132,3 +140,26 @@ document.getElementById("about_button").addEventListener("click", function () {
 document.getElementById("close-about").addEventListener("click", function () {
   document.getElementById("about-overlay").classList.remove("show");
 });
+
+
+export const lightingOn = (scene, camera) => {
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "l") {
+      // if the "l" key is pressed
+      const light = new THREE.PointLight(0xffffff, 100, 10,3); // create a new point light
+      light.position.copy(camera.position);  
+      scene.add(light); // add the light to the scene
+
+      const removeLight = () => {
+        scene.remove(light); //  
+      };
+
+      document.addEventListener("keyup", (event) => {
+        if (event.key === "l") {
+         
+          removeLight(); //  remove the light from the scene
+        }
+      });
+    }
+  });
+};
