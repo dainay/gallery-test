@@ -1,5 +1,9 @@
 import * as THREE from "three";
 import * as TWEEN from '@tweenjs/tween.js';
+
+
+import { counter } from "./js/clickHandling.js";
+ 
 import { scene, setupScene } from "./js/scene.js";
 import { createPaintings } from "./js/paintings.js";
 import { createWalls } from "./js/walls.js";
@@ -58,6 +62,7 @@ let { camera, controls, renderer } = setupScene();
 const textureLoader = new THREE.TextureLoader();
 
 const walls = createWalls(scene, textureLoader);
+ 
 const floor = setupFloor(scene);
 const ceiling = createCeiling(scene, textureLoader);
 const paintings = createPaintings(scene, textureLoader);
@@ -72,9 +77,9 @@ lightingOn(scene, camera);
 
 setupPlayButton(controls);
 
-setupEventListeners(controls, camera, scene);
+setupEventListeners(controls, camera);
 
-clickHandling(renderer, camera, paintings);
+clickHandling(renderer, camera,   scene);
 
 setupRendering(scene, camera, renderer, paintings, controls, walls);
 
@@ -86,10 +91,14 @@ loadCarpetModel(scene);
 
 // //front room
 
-loadFireplaceModel(scene);
+ 
+
+loadFireplaceModel(scene, (FireplaceModel) => {
+  clickHandling(renderer, camera,  [FireplaceModel]);
+});
  
 loadPaintingcowModel(scene, (PaintingcowModel) => {
-  clickHandling(renderer, camera, [PaintingcowModel]);
+  clickHandling(renderer, camera,  [PaintingcowModel]);
 });
 
 loadPdogModel(scene);
@@ -139,7 +148,7 @@ loadHorseheadModel(scene, (loadedHorsehead) => {
 });
  
 
- loadDoorModel(scene, (loadedDoor) => {
+loadDoorModel(scene, (loadedDoor) => {
   clickHandling(renderer, camera, [loadedDoor]);
 });
 
@@ -160,6 +169,45 @@ loadDoor2Model(scene);
 loadDresserModel(scene);
 
 
+function addLight(scene) {
+  let count = document.getElementById('addNumber').size;
+  console.log('counter', counter);
+
+  if (counter.size === 9) {
+       
+      setTimeout(() => {
+        scene.traverse((object) => {
+          if (object instanceof THREE.Light) {
+            object.visible = false;
+          }
+        });
+
+        const fireLight1 = new THREE.PointLight(0x3b7a50, 500);
+        fireLight1.position.set(0, 1.7, -25);
+        scene.add(fireLight1);
+
+        
+const pointLightHelper = new THREE.PointLightHelper( fireLight1, 0.4 );
+scene.add( pointLightHelper );
+
+        document.querySelector("#gameopen").innerHTML =
+          '<p>Félicitations ! Vous êtes maintenant prêt à commencer le jeu. Cliquez sur la cheminée.</p>';
+
+
+          
+      }, 7000);
+
+ 
+       
+  }
+}
+
+
+
+ 
+document.addEventListener('click', function(event) {
+  addLight(scene);
+});
 
 
 
@@ -181,6 +229,7 @@ function animate() {
 
  
 
+  
 
  
 

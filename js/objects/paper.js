@@ -10,7 +10,7 @@ export const loadPaperModel = (scene, callback) => {
       const paper = glb.scene;
 
       paper.userData = {
-        id: 5,
+        id: 9,
         name: 'Paper',
         interactive: true,
         title: "<h2>Paper</h2>",

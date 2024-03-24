@@ -1,8 +1,24 @@
 import * as THREE from "three"; 
+ import { counter } from "./clickHandling";
+
+  
+// export const updateLightingBasedOnCounter = (counterSize) => {
+//     if (counterSize === 2) {
+
+
+//         
  
 
-export const setupLighting = (scene) => {
-  
+
+//     }
+// };
+
+
+
+
+export const setupLighting = (scene, counter) => {
+
+    
 // const ambientLight = new THREE.AmbientLight(0xbbbbbb, 1); // soft white light
 // scene.add(ambientLight);
 
@@ -25,7 +41,14 @@ scene.add(sun);
 
 const fireLight = new THREE.PointLight(0xFF4500, 500);
 fireLight.position.set(0, 1.7, -24);
+fireLight.userData.id = 'lightingup';
 scene.add(fireLight);
+
+
+
+
+
+
 
 // Animation to imitate fire
 setInterval(() => {
@@ -39,7 +62,7 @@ setInterval(() => {
 // ( color : Integer, intensity : Float, distance : Number, decay : Float )
 
 
-const wallLight = new THREE.PointLight(0xffffbb, 18);
+const wallLight = new THREE.PointLight(0xffffbb, 7);
 
 wallLight.position.set(-8.7,3.32,18);
 scene.add(wallLight);
@@ -72,11 +95,18 @@ const group = new THREE.Group();
 const group2 = new THREE.Group();
 
 const positions = [ 
-    {x: 10, y: 4, z: 14},
-    {x: 1, y: 1, z: 23},
-    {x: -2, y: 4, z: -3},
-    {x: 0, y: 0, z: -2},
-    {x: 0, y: 0, z: -2}
+    {x: -19, y: 2, z: 14},//wall id8
+    {x: -9.5, y: 2, z: 1},//order id3
+    {x: 9, y: 3, z: -5},//camera id1
+    {x: 18, y: 13, z: 6.2},//head horse id2
+    {x: -11, y: 3, z: -21},//cow portrait id5
+    {x: -4, y: 1, z: -18},//police paper id9
+    {x: -11, y: 3.7, z: 17},//statue id7
+    {x: -7, y: 2.6, z: 17},//phone id6
+    {x: 7, y: 4, z: -15},//horses painintg h4
+    
+ 
+
   
 ]
 
@@ -84,11 +114,11 @@ const positions = [
   
 
 for (let i = 0; i < positions.length; i++) {
-    const pointLight = new THREE.PointLight(0x42f5e3, 20, 200, 3);
+    const pointLight = new THREE.PointLight(0x42f5e3, 20, 20, 3.4);
     pointLight.position.set(positions[i].x, positions[i].y, positions[i].z);
     group.add(pointLight);
 
-    const pointLightHelper = new THREE.PointLightHelper(pointLight, 0.3);
+    const pointLightHelper = new THREE.PointLightHelper(pointLight, 0.2);
   
    group2.add(pointLightHelper);
 

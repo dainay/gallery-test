@@ -15,7 +15,7 @@ export const loadWallModel = (scene,  callback) => {
       wall.position.set(-19.7, 3.2, 12.5);
 
       wall.userData = {
-        id: 7,
+        id: 8,
         name: 'wall',
         interactive: true,
         title: "<h2>Wall</h2>",

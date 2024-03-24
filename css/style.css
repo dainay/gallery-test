@@ -66,7 +66,17 @@ canvas {
   position: relative;
   z-index: 2;
   text-shadow: 2px 2px 0px #f2c641, 4px 4px 0px rgba(0, 0, 0, 0.4);
-  animation: fadeIn 2s ease-in, shadow-pulse 2s infinite;
+  -webkit-animation: fadeIn 2s ease-in, shadow-pulse 2s infinite;
+          animation: fadeIn 2s ease-in, shadow-pulse 2s infinite;
+}
+
+@-webkit-keyframes shadow-pulse {
+  0% {
+    text-shadow: 2px 2px 0px #2323be, 4px 4px 0px rgba(0, 0, 0, 0.4);
+  }
+  100% {
+    text-shadow: 4px 4px 0px #2323be, 8px 8px 0px rgba(0, 0, 0, 0.4);
+  }
 }
 
 @keyframes shadow-pulse {
@@ -96,9 +106,6 @@ canvas {
   padding: 1em;
   border-bottom-left-radius: 0.9em;
   border-bottom-right-radius: 0.9em;
-
-  -webkit-box-shadow: 0em 0.25em 0.75em rgba(124, 124, 124, 0.5);
-  -moz-box-shadow: 0em 0.25em 0.75em rgba(124, 124, 124, 0.5);
   box-shadow: 0em 0.25em 0.75em rgba(124, 124, 124, 0.5);
 }
 
@@ -113,6 +120,17 @@ canvas {
 #menu #img_container img {
   flex-shrink: 0;
   width: 105%;
+}
+
+@-webkit-keyframes fadeInSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes fadeInSlideUp {
@@ -177,6 +195,15 @@ canvas {
   height: 100%;
 }
 
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -202,7 +229,8 @@ canvas {
   background-size: cover;
   background-position: center;
   z-index: -1;
-  animation: panBg 30s linear infinite;
+  -webkit-animation: panBg 30s linear infinite;
+          animation: panBg 30s linear infinite;
   background-attachment: fixed;
 }
 
@@ -214,6 +242,15 @@ canvas {
   bottom: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.4);
+}
+
+@-webkit-keyframes panBg {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
 }
 
 @keyframes panBg {
@@ -408,4 +445,12 @@ padding: 25px 45px;
 padding: 25px 45px;
 top: 330px;
 right: 50px;
+}
+
+#counter {
+  box-sizing: border-box;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+ color: white;
 }

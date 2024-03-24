@@ -1,6 +1,7 @@
 import { keysPressed } from "./movement.js"; // import the keysPressed object
 import { showMenu, hideMenu } from "./menu.js"; // import the showMenu function
 import { startAudio, stopAudio } from "./audioGuide.js";
+  
 import * as THREE from "three";
 
 let lockPointer = true;
@@ -94,9 +95,6 @@ if (document.querySelector("#object-info2").style.display = "block"){
 
  
         
-        
-   
- 
 
   if (event.key === "p") {
     // if the "s" key is pressed
@@ -143,23 +141,21 @@ document.getElementById("close-about").addEventListener("click", function () {
 
 
 export const lightingOn = (scene, camera) => {
+  let light = null; // declare a variable to store the light object
+
   document.addEventListener("keydown", (event) => {
     if (event.key === "l") {
       // if the "l" key is pressed
-      const light = new THREE.PointLight(0xffffff, 100, 10,3); // create a new point light
-      light.position.copy(camera.position);  
-      scene.add(light); // add the light to the scene
-
-      const removeLight = () => {
-        scene.remove(light); //  
-      };
-
-      document.addEventListener("keyup", (event) => {
-        if (event.key === "l") {
-         
-          removeLight(); //  remove the light from the scene
-        }
-      });
+      if (!light) {
+        // if light is not already added
+        light = new THREE.PointLight(0xffffff, 100); // create a new point light
+        light.position.copy(camera.position);
+        scene.add(light); // add the light to the scene
+      } else {
+        // if light is already added
+        scene.remove(light); // remove the light from the scene
+        light = null; // reset the light variable
+      }
     }
   });
 };

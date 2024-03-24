@@ -10,7 +10,7 @@ export const loadStatueModel = (scene, callback) => {
       const statue = glb.scene;
 
       statue.userData = {
-        id: 6,
+        id: 7,
         name: 'statue',
         interactive: true,
         title: "<h2>statue</h2>",

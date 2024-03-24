@@ -58,6 +58,7 @@ export function createWalls(scene, textureLoader) {
   );
 
   frontWall.position.z = -30; 
+  frontWall.name = 'frontWall';
    
 
 
@@ -240,6 +241,7 @@ rightWall.position.z = -13;
   );
   paysageCut.position.set(-20, 5, -90);
   paysageCut.rotation.y = Math.PI / 4;
+  paysage.name = 'paysage';
   
   
   

@@ -12,7 +12,7 @@ export const loadCameraModel = (scene, callback) => {
       console.log("camera", glb);
 
       cameraobj.userData = {
-        id: 3,
+        id: 1,
         name: 'camera',
         interactive: true,
         title: "<h2>Camera</h2>",

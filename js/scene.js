@@ -6,6 +6,12 @@ let camera;
 let controls;
 let renderer;
 
+
+
+
+
+
+
 export const setupScene = () => {
   
   camera = new THREE.PerspectiveCamera(
