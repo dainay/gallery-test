@@ -10,6 +10,7 @@ export const setupRendering = (
   controls,
   walls
 ) => {
+  console.log("Setup painting in rendering", paintings);
   const clock = new THREE.Clock();
 
   let render = function () {
@@ -30,9 +31,9 @@ export const setupRendering = (
 
     if (paintingToShow) {
       console.log("paintingToShow", paintingToShow);
-      displayPaintingInfo(paintingToShow);
+      displayPaintingInfo(paintingToShow, camera);
     } else {
-      hidePaintingInfo();
+      hidePaintingInfo(camera);
     }
 
     renderer.gammaOutput = true;

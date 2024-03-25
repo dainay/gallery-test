@@ -1,11 +1,16 @@
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import * as THREE from "three";
 import { scene } from './scene.js';
+import { models } from './paintings.js'; 
 
-const models = new Map(); // Хранит загруженные модели
+ 
 
-export const displayPaintingInfo = (painting) => {
-  const info = painting.userData.info; // Предполагаем, что информация хранится здесь
+
+
+export const displayPaintingInfo = (painting, camera) => {
+console.log(painting, 'IMPORTANT ONE PASS INFO');
+const cameraOld = camera.position.clone();
+  const info = painting.userData; // Предполагаем, что информация хранится здесь
   const infoElement = document.getElementById('painting-info');
 
   infoElement.innerHTML = `
@@ -16,11 +21,22 @@ export const displayPaintingInfo = (painting) => {
   `;
   infoElement.classList.add('show');
 
-  // Управление видимостью модели
-  if (painting.userData.model) {
-    models.get(painting.userData.model.key).visible = true; // Показываем модель
+// const position = new THREE.Vector3(painting.userData.etudes.position.x  , painting.userData.etudes.position.y, painting.userData.etudes.position.z);
+
+ 
+  if (painting.userData.modelKey) {
+    const model = models.get(painting.userData.modelKey);
+    if (model) {
+      model.visible = true; 
+    }
   }
-};
+
+  // camera.lookAt(position);
+  camera.fov = 80;
+  // camera.position.set(0, 6, -2);
+  camera.updateProjectionMatrix();
+
+}
 
 
 
@@ -28,11 +44,12 @@ export const displayPaintingInfo = (painting) => {
 
 
 
-export const hidePaintingInfo = () => {
+export const hidePaintingInfo = (camera) => {
   models.forEach((model) => {
-    model.visible = false; // Скрываем модели вместо удаления
+    model.visible = false;  
   });
-
+  camera.fov = 60;
+  camera.updateProjectionMatrix();
   const infoElement = document.getElementById('painting-info');
   infoElement.classList.remove('show');
 };

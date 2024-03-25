@@ -1,8 +1,8 @@
 import * as THREE from 'three';
-
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { paintingData } from './paintingData.js';
 
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+const models = new Map(); // Инициализация карты для хранения загруженных моделей
 
 export function createPaintings(scene, textureLoader) {
   const loader = new GLTFLoader(); // Инициализация загрузчика GLTF
@@ -18,16 +18,18 @@ export function createPaintings(scene, textureLoader) {
     
     painting.position.set(data.position.x, data.position.y, data.position.z);
     painting.rotation.y = data.rotationY;
-    painting.userData = data.info; // Сохраняем информацию о картине
-    
+    painting.userData = data.info; 
+
     // Загрузка и инициализация 3D модели (этюда)
     loader.load(data.info.etudes.link, (gltf) => {
-      const model = gltf.scene;
-      model.position.set(data.position.x, data.position.y, data.position.z); // Настройка позиции
-      model.visible = false; // Изначально модель невидима
-      scene.add(model);  
-      model.scale.set(3, 3, 3); // Настройка масштаба
-      painting.userData.model = model; // Сохранение ссылки на модель в userData картины
+      gltf.scene.position.set(data.position.x, data.position.y, data.position.z); // Настройка позиции
+      gltf.scene.rotation.y = data.rotationY; // Настройка поворота
+      gltf.scene.scale.set(3, 3, 3); // Настройка масштаба
+      gltf.scene.visible = false
+      models.set(data.info.etudes.key, gltf.scene); 
+      scene.add(gltf.scene); // Добавление модели в сцену
+      // Сохранение ключа модели в userData картины для последующего доступа
+      painting.userData.modelKey = data.info.etudes.key; 
     });
 
     scene.add(painting);
@@ -36,3 +38,6 @@ export function createPaintings(scene, textureLoader) {
 
   return paintings;
 }
+
+// Экспорт карты моделей для доступа из других модулей
+export { models };
