@@ -13,15 +13,15 @@ export const loadPdogModel = (scene) => {
       console.log("Pdog", glb);
 
       // Position the pdog at the center of the floor
-      pdog.position.set(16, 13, -24.5);
+      pdog.position.set(15.5, 14, -24.5);
        
       // Rotate the pdog by 120 degrees
-      pdog.rotation.y = Math.PI * 1.3;
+      pdog.rotation.y = -Math.PI * 0.3;
    
      
 
       // Scale if necessary
-      const scale = 1;
+      const scale = 3.5;
       pdog.scale.set(scale, scale, scale);
 
       // Iterate through all the meshes in the pdog and update their materials
