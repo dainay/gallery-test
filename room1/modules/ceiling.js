@@ -14,11 +14,16 @@ export const createCeiling = (scene, textureLoader) => {
       side: THREE.DoubleSide, // Render both sides of the mesh
     });
   
+    const color = new THREE.MeshStandardMaterial({
+      color: 0x251a2e,
+      side: THREE.DoubleSide,
+    });
+  
  
 
   const ceilingGeometry = new THREE.PlaneGeometry(40, 60);
  
-  const ceilingPlane = new THREE.Mesh(ceilingGeometry, ceilingMaterial);
+  const ceilingPlane = new THREE.Mesh(ceilingGeometry, color);
 
   ceilingPlane.rotation.x = Math.PI / 2;
 

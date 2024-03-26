@@ -12,9 +12,11 @@ export const setupFloor = (scene) => {
   const planeMaterial = new THREE.MeshStandardMaterial({
       map:  planeTexturePromise, // Apply the loaded texture as the color map
       side: THREE.DoubleSide, // Render both sides of the mesh
+      roughness: 0.4, // Adjust the roughness of the material for better light reflection
+      metalness: 1, // Adjust the metalness of the material for better light reflection
     });
 
-  const planeGeometry = new THREE.PlaneGeometry(30, 45);
+  const planeGeometry = new THREE.PlaneGeometry(40, 45);
   
 
   const floorPlane = new THREE.Mesh(planeGeometry, planeMaterial);

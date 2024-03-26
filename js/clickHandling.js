@@ -45,7 +45,7 @@ function onClick(camera, objects, renderer, scene) {
       let newPosition; // Declare once, outside the conditionals
 
       if (object.userData.name == "door") {
-        window.location.href = "./room1/room1.html";
+        window.location.href = "./room1.html";
         return;
       } else if (object.userData.name == "fireplace") {
         console.log("fireplace enter");

@@ -13,7 +13,10 @@ import { setupPlayButton } from "./modules/menu.js";
 // import { setupAudio } from "./modules/audioGuide.js";
 import { clickHandling } from "./modules/clickHandling.js";
 import { setupVR } from "./modules/VRSupport.js";
-import { etudes} from  "./modules/etudes.js";
+import { loadDoorModel } from "./modules/door.js";
+import { loadExitModel } from "./modules/exit.js";
+import { loadLampModel } from "./modules/lamps.js";
+ 
   
 let { camera, controls, renderer } = setupScene();
 
@@ -40,8 +43,12 @@ clickHandling(renderer, camera, paintings);
 
 setupRendering(scene, camera, renderer, paintings, controls, walls);
 
+loadDoorModel(scene, (DoorModel) => {
+    clickHandling(renderer, camera, [DoorModel]);
+  });
 
-etudes(scene);
+  loadExitModel(scene); 
+  loadLampModel(scene); 
  
 
 setupVR(renderer);

@@ -20,11 +20,11 @@ export const loadDoorModel = (scene, callback) => {
       console.log("Door", glb);
 
       // Position the door at the center of the floor
-      door.position.set(0, -2.5, 20);
+      door.position.set(0, -2.5, 19);
 
       
       
-      door.rotation.y = Math.PI / 2;
+      door.rotation.y = -Math.PI / 2;
 
       // Scale if necessary
       const scale = 4;

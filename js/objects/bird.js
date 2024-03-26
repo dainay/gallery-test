@@ -31,6 +31,20 @@ bird.rotation.y = Math.PI;
        bird2.scale.set(0.3, 0.3, 0.3);
 
 
+      bird.traverse((child) => {
+        if (child.isMesh) {
+          child.material.metalness = 1;
+          child.material.roughness = 0.5;
+        }
+      });
+
+      bird2.traverse((child) => {
+        if (child.isMesh) {
+          child.material.metalness = 1;
+          child.material.roughness = 0.5;
+        }
+      });
+
       scene.add(bird, bird2);
 
     },

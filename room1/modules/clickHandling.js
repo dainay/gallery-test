@@ -21,12 +21,31 @@ function onClick(camera, paintings) {
   const intersects = raycaster.intersectObjects(paintings);
 
   if (intersects.length > 0) {
-    const painting = intersects[0].object;
+    let object = intersects[0].object;
 
-    // Perform the desired action, e.g., open a modal or redirect to another page
-    console.log('Clicked painting:', painting.userData.info.title);
-    window.open(painting.userData.info.link, '_blank');
+   
+    while (object && !object.userData.id) {
+      object = object.parent;
+    }
+
+       if (object && object.userData) {
+      // Make sure object exists and has userData
+      console.log(object, "OBJECT WITH USER DATA");
+
+     
+
+      if (object.userData.name == "door") {
+        window.location.href = "./index.html";
+        return;
+      }
+
+
+
+
+
+
+
   }
-}
+}}
 
 export { clickHandling };

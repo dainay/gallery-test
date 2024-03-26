@@ -4,6 +4,7 @@ import { scene } from './scene.js';
 import { models } from './paintings.js'; 
 
  
+let currentVisibleModel = null; // На начальном этапе активной модели нет
 
 
 
@@ -23,33 +24,39 @@ const cameraOld = camera.position.clone();
 
 // const position = new THREE.Vector3(painting.userData.etudes.position.x  , painting.userData.etudes.position.y, painting.userData.etudes.position.z);
 
- 
-  if (painting.userData.modelKey) {
-    const model = models.get(painting.userData.modelKey);
-    if (model) {
-      model.visible = true; 
+if (painting.userData.etudes.modelKey) {
+  const model = models.get(painting.userData.etudes.modelKey);
+
+  if (model) {
+    if (currentVisibleModel) {
+      // Скрываем предыдущую активную модель
+      currentVisibleModel.visible = false;
     }
+    // Показываем новую модель
+    model.visible = true;
+    // Обновляем ссылку на активную модель
+    currentVisibleModel = model;
+  }
+}
   }
 
   // camera.lookAt(position);
-  camera.fov = 80;
+  // camera.fov = 80;
   // camera.position.set(0, 6, -2);
-  camera.updateProjectionMatrix();
-
-}
-
-
+  // camera.updateProjectionMatrix();
 
 
 
 
 
 export const hidePaintingInfo = (camera) => {
-  models.forEach((model) => {
-    model.visible = false;  
-  });
-  camera.fov = 60;
-  camera.updateProjectionMatrix();
+  
+  if (currentVisibleModel) {
+    currentVisibleModel.visible = false; // Скрываем активную модель
+    currentVisibleModel = null; // Сбрасываем ссылку на активную модель
+  }
+  // // camera.fov = 60;
+  // // camera.updateProjectionMatrix();
   const infoElement = document.getElementById('painting-info');
   infoElement.classList.remove('show');
 };
