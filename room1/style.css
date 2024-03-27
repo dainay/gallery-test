@@ -4,20 +4,20 @@
  
 @font-face {
   font-family: "Candaral";
-  src: url("../src/fonts/Candaral.ttf") format("truetype");
+  src: url("/fonts/Candaral.ttf") format("truetype");
   font-weight: 100;
   font-style: normal;
 }
  
 @font-face {
   font-family: "Antiquab";
-  src: url("../src/fonts/ANTQUAB.ttf") format("truetype");
+  src: url("/fonts/ANTQUAB.TTF") format("truetype");
   font-weight: 900;
   font-style: normal;
 }
 @font-face {
   font-family: "BKANT";
-  src: url("../src/fonts/Book.ttf") format("truetype");
+  src: url("/fonts/Book.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
@@ -36,7 +36,7 @@ body {
   padding: 0em;
   overflow: hidden;
   background-color: #121212;
-  cursor: url("../src/img/brush.png") 0 100, auto;
+  cursor: url("/img/brush.png") 0 100, auto;
 }
 
 p,
@@ -90,7 +90,7 @@ canvas {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("../src/img/background.jpg");
+    background-image: url("/img/background.jpg");
     background-size: cover;
     background-position: bottom;
     -webkit-filter: brightness(0.7);

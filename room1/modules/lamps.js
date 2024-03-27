@@ -5,7 +5,7 @@ export const loadLampModel = (scene) => {
   const loader = new GLTFLoader();
 
   loader.load(
-    "../public/models/lamp.glb",
+    "/models/lamp.glb",
     function (glb) {
       const lamp = glb.scene;
 

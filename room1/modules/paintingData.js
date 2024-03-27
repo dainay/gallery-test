@@ -1,6 +1,6 @@
 export const paintingData = [
  { 
-    imgSrc: `./public/artworks/111.jpg`, // `i + 1` is the painting number. We add 1 to the index because the index starts at 0 but we want the painting numbers to start at 1.
+    imgSrc: ` /artworks/111.jpg`, // `i + 1` is the painting number. We add 1 to the index because the index starts at 0 but we want the painting numbers to start at 1.
     width: 1, // width of the painting
     height: 1, // height of the painting
     position: { x: 0, y: 3, z: -29.9 }, // position of the painting
@@ -21,13 +21,13 @@ export const paintingData = [
 
       cadre: {
         key: 'framebalto',
-        link: '../public/rooms/baltoframe.glb',
+        link: '/rooms/baltoframe.glb',
         cadre: './frame1.glb',
         position: { x: 0, y: 3, z: -29.5 },
       },
       etudes: {
         key: 'balto',
-        link: '../public/rooms/balto.glb',
+        link: '/rooms/balto.glb',
         position: { x: 0, y: 3, z: -29.5 },
           
       }
@@ -65,14 +65,14 @@ export const paintingData = [
       Thus, Rosa Bonheur's "Portrait of a Donkey" does not merely depict a simple working animal, but it becomes a living witness to the social realities and interdependent relationships between humans and animals at that time.`,
       cadre: {
         key: 'framedonkey',
-        link: '../public/rooms/donkeyframe.glb',
+        link: '/rooms/donkeyframe.glb',
         cadre: './frame1.glb',
         position: { x: 0, y: 3, z: -29.5 },
       },
 
       etudes: {
         key: 'donkey',
-        link: '../public/rooms/donkey.glb',
+        link: '/rooms/donkey.glb',
         position: { x: 0, y: 3, z: -10 },
           
       }
@@ -110,13 +110,13 @@ export const paintingData = [
       Thus, "Three Male Deer in the Fontainebleau Forest" embodies not only Rosa Bonheur's artistic talent but also her commitment to the animal cause and environmental preservation, making this work a poignant testimony of her time and a source of inspiration for future generations.`,
       cadre: {
         key: 'framecerf',
-        link: '../public/rooms/cerfframe.glb',
+        link: '/rooms/cerfframe.glb',
         cadre: './public/rooms/frame1.glb',
         position: { x: 0, y: 3, z: -29.5 },
       },
       etudes: {
         key: 'cerf',
-        link: '../public/rooms/cerf1.glb',
+        link: '/rooms/cerf1.glb',
         position: { x: 0, y: 3, z: -10 },
           
       }

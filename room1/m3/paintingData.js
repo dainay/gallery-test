@@ -1,6 +1,6 @@
 export const paintingData = [
  { 
-    imgSrc: `../public/rooms/artworks/111.jpg`, // `i + 1` is the painting number. We add 1 to the index because the index starts at 0 but we want the painting numbers to start at 1.
+    imgSrc: `/rooms/artworks/111.jpg`, // `i + 1` is the painting number. We add 1 to the index because the index starts at 0 but we want the painting numbers to start at 1.
     width: 1, // width of the painting
     height: 1, // height of the painting
     position: { x: 0, y: 3, z: -29.9 }, // position of the painting
@@ -30,13 +30,13 @@ Elle invite le spectateur à se perdre dans les paysages grandioses des Highland
 
       cadre: {
         key: 'framebull',
-        link: '../public/rooms/bullframe.glb',
-        cadre: '../public/rooms/frame1.glb',
+        link: '/rooms/bullframe.glb',
+        cadre: '/rooms/frame1.glb',
         position: { x: 0, y: 3, z: -29.5 },
       },
       etudes: {
         key: 'bull',
-        link: '../public/rooms/bull.glb',
+        link: '/rooms/bull.glb',
         position: { x: 0, y: 3, z: -29.5 },
           
       }
@@ -47,7 +47,7 @@ Elle invite le spectateur à se perdre dans les paysages grandioses des Highland
 
 
   { 
-    imgSrc: `../public/rooms/artworks/000.jpg`, // `i + 1` is the painting number. We add 1 to the index because the index starts at 0 but we want the painting numbers to start at 1.
+    imgSrc: `/rooms/artworks/000.jpg`, // `i + 1` is the painting number. We add 1 to the index because the index starts at 0 but we want the painting numbers to start at 1.
     width: 1, // width of the painting
     height: 1, // height of the painting
     position: { x: -19.7, y: 3, z: -11 }, // position of the painting
@@ -75,14 +75,14 @@ Elle invite le spectateur à se perdre dans les paysages grandioses des Highland
 
       cadre: {
         key: 'framehorse',
-        link: '../public/rooms/horseframe.glb',
+        link: '/rooms/horseframe.glb',
    
         position: { x: 0, y: 3, z: -29.5 },
       },
 
       etudes: {
         key: 'horse',
-        link: '../public/rooms/horse.glb',
+        link: '/rooms/horse.glb',
         position: { x: 0, y: 3, z: -10 },
           
       }
@@ -93,7 +93,7 @@ Elle invite le spectateur à se perdre dans les paysages grandioses des Highland
 
 
   { 
-    imgSrc: `../public/rooms/artworks/300.jpg`, // `i + 1` is the painting number. We add 1 to the index because the index starts at 0 but we want the painting numbers to start at 1.
+    imgSrc: `/rooms/artworks/300.jpg`, // `i + 1` is the painting number. We add 1 to the index because the index starts at 0 but we want the painting numbers to start at 1.
     width: 1, // width of the painting
     height: 1, // height of the painting
     position: { x: 19.9, y: 3, z: -11 }, // position of the painting
@@ -120,13 +120,13 @@ Elle invite le spectateur à se perdre dans les paysages grandioses des Highland
       This work was never completed. She began it in 1864 but did not finish it before her death in 1899.`,
       cadre: {
         key: 'framehorserun',
-        link: '../public/rooms/horserunframe.glb',
-        cadre: '../public/rooms/frame1.glb',
+        link: '/rooms/horserunframe.glb',
+        cadre: '/rooms/frame1.glb',
         position: { x: 0, y: 3, z: -29.5 },
       },
       etudes: {
         key: ' horserun',
-        link: '../public/rooms/horserun.glb',
+        link: '/rooms/horserun.glb',
         position: { x: 0, y: 3, z: -10 },
           
       }

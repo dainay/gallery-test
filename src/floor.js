@@ -4,7 +4,7 @@ import * as THREE from "three";
 export const setupFloor = (scene) => {
   const textureLoader = new THREE.TextureLoader();
 
-  const planeTexturePromise = textureLoader.load(' /textures/floor.jpg', texture => {
+  const planeTexturePromise = textureLoader.load('/textures/floor.jpg', texture => {
     texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
     texture.repeat.set(10, 10); // Adjust based on your texture and preference
   });
