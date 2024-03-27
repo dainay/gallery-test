@@ -12,7 +12,7 @@ export const loadDoorModel = (scene, callback) => {
 
 
       door.userData = {
-        id: 1,
+        id: 11,
         name: 'door',
         interactive: true,
       };

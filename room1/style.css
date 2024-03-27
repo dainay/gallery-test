@@ -384,7 +384,7 @@ z-index: 2;
   left: 0;
   width: 100%;
   height: 100%;
-  padding-inline: 500px;
+   
   padding-block: 100px;
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
@@ -512,17 +512,26 @@ width: 5vw;
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
+  width: 100%;
+}
+
+.text-wrapp-about div {
+  max-width: 600px;
 }
 
 .img-about {
  
-  width: 400px;
+  width: 30%  ;
   
   margin-inline: 50px;
 }
 .img-about img {
-  width: 400px;
- 
+  width: 100%;
+  border-radius: 10px ;
+  -webkit-border-radius: 10px ;
+  -moz-border-radius: 10px ;
+  -ms-border-radius: 10px ;
+  -o-border-radius: 10px ;
 }
 
 #gameopen {

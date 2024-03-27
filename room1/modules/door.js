@@ -40,9 +40,12 @@ export const loadDoorModel = (scene, callback) => {
 
       // Add the door to the scene
       scene.add(door);
+      document.getElementById("loader").style.display = "none";
+
       if (callback && typeof callback === 'function') {
         callback(door);
       }
+
     },
     function (xhr) {
       console.log((xhr.loaded / xhr.total) * 100 + "% loaded");

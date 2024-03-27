@@ -43,6 +43,7 @@ import { loadPdogModel } from "./js/objects/pdog.js";
 import { loadPhorseModel } from "./js/objects/phorse.js";
 import { loadDoorModel } from "./js/objects/door.js";
 import { loadDoor2Model } from "./js/objects/door2.js";
+import { loadDoor3Model } from "./js/objects/door3.js";
 import { loadTableModel } from "./js/objects/table.js";
 import { loadPianoModel } from "./js/objects/piano.js";
 import { loadBirdModel } from "./js/objects/bird.js";
@@ -165,8 +166,13 @@ loadStatueModel(scene, (loadedStatue) => {
 
  
  
+loadDoor2Model(scene, (loadedDoor2) => {
+  clickHandling(renderer, camera, [loadedDoor2]);
+});
 
-loadDoor2Model(scene);
+loadDoor3Model(scene, (loadedDoor3) => {
+  clickHandling(renderer, camera, [loadedDoor3]);
+});
  
 loadDresserModel(scene);
 

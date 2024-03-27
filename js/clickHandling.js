@@ -33,7 +33,7 @@ function onClick(camera, objects, renderer, scene) {
       object = object.parent;
     }
 
-    if (object.userData.id != 11) {
+    if (object.userData.id != 11 && object.userData.id != 12 && object.userData.id != 13) {
       counter.add(object.userData.id);
     }
 
@@ -47,7 +47,17 @@ function onClick(camera, objects, renderer, scene) {
       if (object.userData.name == "door") {
         window.location.href = "./room1/room1.html";
         return;
-      } else if (object.userData.name == "fireplace") {
+      } 
+      else if (object.userData.name == "door2") {
+        window.location.href = "./room1/room2.html";
+        return;
+      }
+      else if (object.userData.name == "door3") {
+        window.location.href = "./room1/room3.html";
+        return;
+      }
+      
+      else if (object.userData.name == "fireplace") {
         console.log("fireplace enter");
         if (counter.size == 9) {
           new TWEEN.Tween(camera.position)
