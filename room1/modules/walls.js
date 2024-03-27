@@ -7,25 +7,9 @@ export function createWalls(scene, textureLoader) {
 
 
    textureLoader = new THREE.TextureLoader();
-
-  // Load textures
-  const wallTexturePromise = textureLoader.load('./../textures/blackwalls.jpg', texture => {
-    texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
-    texture.repeat.set(7, 3); // Adjust based on your texture and preference
-  });
-
    
   
-
-  const wallMaterial = new THREE.MeshStandardMaterial({
-    map:  wallTexturePromise, 
-    metalness: 0,
  
-    roughness: 0.3,
-   
-    
-    side: THREE.DoubleSide, 
-  });
 
   const color = new THREE.MeshStandardMaterial({
     color: 0x251a2e,

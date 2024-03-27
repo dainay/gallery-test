@@ -1,5 +1,6 @@
-// vite.config.js
 import { defineConfig } from 'vite';
+
+// vite.config.js
 
 export default defineConfig({
   base: '/',
@@ -14,5 +15,7 @@ export default defineConfig({
         room2: '/room1/room3.html', // HTML для второй комнаты// HTML для второй комнаты
       },
     },
+   
   },
 });
+

@@ -4,15 +4,7 @@ import * as THREE from "three";
 export const createCeiling = (scene, textureLoader) => {
   
   textureLoader = new THREE.TextureLoader();
-  const ceilingTexturePromise = textureLoader.load('./../textures/blackwalls.jpg', texture => {
-    texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
-    texture.repeat.set(3, 3); // Adjust based on your texture and preference
-  });
-  
-  const ceilingMaterial = new THREE.MeshStandardMaterial({
-      map:  ceilingTexturePromise, // Apply the loaded texture as the color map
-      side: THREE.DoubleSide, // Render both sides of the mesh
-    });
+ 
   
     const color = new THREE.MeshStandardMaterial({
       color: 0x251a2e,

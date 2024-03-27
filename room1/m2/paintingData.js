@@ -27,13 +27,13 @@ export const paintingData = [
 
       cadre: {
         key: 'framelion',
-        link: './lionframe.glb',
-        cadre: './frame1.glb',
+        link: './public/lionframe.glb',
+        cadre: './public/frame1.glb',
         position: { x: 0, y: 3, z: -29.5 },
       },
       etudes: {
         key: 'lion',
-        link: './lion.glb',
+        link: './public/lion.glb',
         position: { x: 0, y: 3, z: -29.5 },
           
       }
@@ -69,14 +69,14 @@ export const paintingData = [
       To achieve such precision in her representations, Rosa Bonheur adopted a scientific approach, carefully observing animals and making various studies, whether paintings, pencil drawings, or even sculptures. In her youth, Bonheur was accustomed to modeling small animals in wax. These models notably helped her later in making her bronze sculptures. Unlike her brother Isidore Bonheur, who mainly focused on sculpture, Rosa Bonheur chose to preserve the art of sculpting to enrich her studies and deepen her understanding of animal forms and movements.`,
       cadre: {
         key: 'framesheep',
-        link: './sheepframe.glb',
-        cadre: './frame1.glb',
+        link: './public/sheepframe.glb',
+        cadre: './public/frame1.glb',
         position: { x: 0, y: 3, z: -29.5 },
       },
 
       etudes: {
         key: 'sheep',
-        link: 'sheep.glb',
+        link: './public/sheep.glb',
         position: { x: 0, y: 3, z: -10 },
           
       }
@@ -111,13 +111,13 @@ export const paintingData = [
       During Rosa Bonheur's time, wild boars were often associated with hunting. However, the artist viewed them differently, not purely as fierce creatures. Through this work, she offers a more nuanced vision of these animals, highlighting their tranquility, intelligence, and ability to navigate their natural environment with a certain grace and wisdom. Bonheur had a wild boar named Kiki, which certainly served as a model for her in the oil study, as seen in Theodore Stanton's illustration.`,
       cadre: {
         key: 'framepig',
-        link: './pigframe.glb',
-        cadre: './frame1.glb',
+        link: './public/pigframe.glb',
+        cadre: './public/frame1.glb',
         position: { x: 0, y: 3, z: -29.5 },
       },
       etudes: {
         key: 'pig',
-        link: './pig.glb',
+        link: './public/pig.glb',
         position: { x: 0, y: 3, z: -10 },
           
       }

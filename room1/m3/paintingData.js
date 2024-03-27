@@ -30,13 +30,13 @@ Elle invite le spectateur à se perdre dans les paysages grandioses des Highland
 
       cadre: {
         key: 'framebull',
-        link: './bullframe.glb',
-        cadre: './frame1.glb',
+        link: './public/bullframe.glb',
+        cadre: './public/frame1.glb',
         position: { x: 0, y: 3, z: -29.5 },
       },
       etudes: {
         key: 'bull',
-        link: './bull.glb',
+        link: './public/bull.glb',
         position: { x: 0, y: 3, z: -29.5 },
           
       }
@@ -75,14 +75,14 @@ Elle invite le spectateur à se perdre dans les paysages grandioses des Highland
 
       cadre: {
         key: 'framehorse',
-        link: './horseframe.glb',
+        link: './public/horseframe.glb',
    
         position: { x: 0, y: 3, z: -29.5 },
       },
 
       etudes: {
         key: 'horse',
-        link: 'horse.glb',
+        link: './public/publichorse.glb',
         position: { x: 0, y: 3, z: -10 },
           
       }
@@ -101,7 +101,7 @@ Elle invite le spectateur à se perdre dans les paysages grandioses des Highland
     id: 9,
     info: {
       // info about the painting
-      title:' La Foulaison du blé en Camargue - 1864-1899 La Foulaison du blé en Camargue - 1864-1899',
+      title:' La Foulaison du blé en Camargue - 1864-1899',
       size: '  313,0cm x 654,0 cm  ',
       place: 'Galerie et au musée des Beaux-Arts de Bordeaux',
       fr: `<b>Un paysan camarguais à la tête d’un troupeau de chevaux ; il tient un fouet, mais n’est-ce pas les chevaux qui semblent être puissants ?</b>
@@ -120,13 +120,13 @@ Elle invite le spectateur à se perdre dans les paysages grandioses des Highland
       This work was never completed. She began it in 1864 but did not finish it before her death in 1899.`,
       cadre: {
         key: 'framehorserun',
-        link: './horserunframe.glb',
-        cadre: './frame1.glb',
+        link: './public/horserunframe.glb',
+        cadre: './public/frame1.glb',
         position: { x: 0, y: 3, z: -29.5 },
       },
       etudes: {
-        key: 'horserun',
-        link: './horserun.glb',
+        key: ' horserun',
+        link: './public/horserun.glb',
         position: { x: 0, y: 3, z: -10 },
           
       }

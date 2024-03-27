@@ -5,7 +5,7 @@ export const loadExitModel = (scene, callback) => {
   const loader = new GLTFLoader();
 
   loader.load(
-    "../models/exit.glb",
+    "../public/models/exit.glb",
     function (glb) {
       const exit = glb.scene;
 
