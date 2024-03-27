@@ -8,12 +8,12 @@ export function createWalls(scene, textureLoader) {
    textureLoader = new THREE.TextureLoader();
 
   // Load textures
-  const wallTexturePromise = textureLoader.load('../public/textures/walls2.jpg', texture => {
+  const wallTexturePromise = textureLoader.load('./textures/walls2.jpg', texture => {
     texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
     texture.repeat.set(7, 3); // Adjust based on your texture and preference
   });
 
-  const wallwhite = textureLoader.load('../public/textures/ceiling.jpg', texture2 => {
+  const wallwhite = textureLoader.load('./textures/ceiling.jpg', texture2 => {
     texture2.wrapS = texture2.wrapT = THREE.RepeatWrapping;
     texture2.repeat.set(1, 3);  
   });
@@ -201,7 +201,7 @@ rightWall.position.z = -13;
 
 
 
-  const paysageTexture = textureLoader.load('../public/textures/paysage.jpg');
+  const paysageTexture = textureLoader.load('./src/textures/paysage.jpg');
 
 
 

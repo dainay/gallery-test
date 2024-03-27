@@ -5,7 +5,7 @@ export const loadDoorModel = (scene, callback) => {
   const loader = new GLTFLoader();
 
   loader.load(
-    "../models/door.glb",
+    "../public/models/door.glb",
     function (glb) {
       const door = glb.scene;
 

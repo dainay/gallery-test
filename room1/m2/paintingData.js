@@ -1,6 +1,6 @@
 export const paintingData = [
  { 
-    imgSrc: `./public/artworks/111.jpg`, // `i + 1` is the painting number. We add 1 to the index because the index starts at 0 but we want the painting numbers to start at 1.
+    imgSrc: `../public/rooms/artworks/111.jpg`, // `i + 1` is the painting number. We add 1 to the index because the index starts at 0 but we want the painting numbers to start at 1.
     width: 1, // width of the painting
     height: 1, // height of the painting
     position: { x: 0, y: 3, z: -29.9 }, // position of the painting
@@ -27,13 +27,13 @@ export const paintingData = [
 
       cadre: {
         key: 'framelion',
-        link: './public/lionframe.glb',
-        cadre: './public/frame1.glb',
+        link: '../public/rooms/lionframe.glb',
+        cadre: '../public/rooms/frame1.glb',
         position: { x: 0, y: 3, z: -29.5 },
       },
       etudes: {
         key: 'lion',
-        link: './public/lion.glb',
+        link: '../public/rooms/lion.glb',
         position: { x: 0, y: 3, z: -29.5 },
           
       }
@@ -44,7 +44,7 @@ export const paintingData = [
 
 
   { 
-    imgSrc: `./public/artworks/000.jpg`, // `i + 1` is the painting number. We add 1 to the index because the index starts at 0 but we want the painting numbers to start at 1.
+    imgSrc: `../public/rooms/artworks/000.jpg`, // `i + 1` is the painting number. We add 1 to the index because the index starts at 0 but we want the painting numbers to start at 1.
     width: 1, // width of the painting
     height: 1, // height of the painting
     position: { x: -19.7, y: 3, z: -11 }, // position of the painting
@@ -69,14 +69,14 @@ export const paintingData = [
       To achieve such precision in her representations, Rosa Bonheur adopted a scientific approach, carefully observing animals and making various studies, whether paintings, pencil drawings, or even sculptures. In her youth, Bonheur was accustomed to modeling small animals in wax. These models notably helped her later in making her bronze sculptures. Unlike her brother Isidore Bonheur, who mainly focused on sculpture, Rosa Bonheur chose to preserve the art of sculpting to enrich her studies and deepen her understanding of animal forms and movements.`,
       cadre: {
         key: 'framesheep',
-        link: './public/sheepframe.glb',
-        cadre: './public/frame1.glb',
+        link: '../public/rooms/sheepframe.glb',
+        cadre: '../public/rooms/frame1.glb',
         position: { x: 0, y: 3, z: -29.5 },
       },
 
       etudes: {
         key: 'sheep',
-        link: './public/sheep.glb',
+        link: '../public/rooms/sheep.glb',
         position: { x: 0, y: 3, z: -10 },
           
       }
@@ -87,7 +87,7 @@ export const paintingData = [
 
 
   { 
-    imgSrc: `./public/artworks/300.jpg`, // `i + 1` is the painting number. We add 1 to the index because the index starts at 0 but we want the painting numbers to start at 1.
+    imgSrc: `../public/rooms/artworks/300.jpg`, // `i + 1` is the painting number. We add 1 to the index because the index starts at 0 but we want the painting numbers to start at 1.
     width: 1, // width of the painting
     height: 1, // height of the painting
     position: { x: 19.9, y: 3, z: -11 }, // position of the painting
@@ -111,13 +111,13 @@ export const paintingData = [
       During Rosa Bonheur's time, wild boars were often associated with hunting. However, the artist viewed them differently, not purely as fierce creatures. Through this work, she offers a more nuanced vision of these animals, highlighting their tranquility, intelligence, and ability to navigate their natural environment with a certain grace and wisdom. Bonheur had a wild boar named Kiki, which certainly served as a model for her in the oil study, as seen in Theodore Stanton's illustration.`,
       cadre: {
         key: 'framepig',
-        link: './public/pigframe.glb',
-        cadre: './public/frame1.glb',
+        link: '../public/rooms/pigframe.glb',
+        cadre: '../public/rooms/frame1.glb',
         position: { x: 0, y: 3, z: -29.5 },
       },
       etudes: {
         key: 'pig',
-        link: './public/pig.glb',
+        link: '../public/rooms/pig.glb',
         position: { x: 0, y: 3, z: -10 },
           
       }

@@ -26,7 +26,7 @@ export const createCeiling = (scene, textureLoader) => {
   // );
 
   textureLoader = new THREE.TextureLoader();
-  const ceilingTexturePromise = textureLoader.load('../public/textures/ceiling2.jpg', texture => {
+  const ceilingTexturePromise = textureLoader.load('./textures/ceiling2.jpg', texture => {
     texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
     texture.repeat.set(3, 3); // Adjust based on your texture and preference
   });

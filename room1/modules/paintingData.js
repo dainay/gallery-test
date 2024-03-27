@@ -21,13 +21,13 @@ export const paintingData = [
 
       cadre: {
         key: 'framebalto',
-        link: './public/baltoframe.glb',
+        link: '../public/rooms/baltoframe.glb',
         cadre: './frame1.glb',
         position: { x: 0, y: 3, z: -29.5 },
       },
       etudes: {
         key: 'balto',
-        link: './public/balto.glb',
+        link: '../public/rooms/balto.glb',
         position: { x: 0, y: 3, z: -29.5 },
           
       }
@@ -65,14 +65,14 @@ export const paintingData = [
       Thus, Rosa Bonheur's "Portrait of a Donkey" does not merely depict a simple working animal, but it becomes a living witness to the social realities and interdependent relationships between humans and animals at that time.`,
       cadre: {
         key: 'framedonkey',
-        link: './public/donkeyframe.glb',
+        link: '../public/rooms/donkeyframe.glb',
         cadre: './frame1.glb',
         position: { x: 0, y: 3, z: -29.5 },
       },
 
       etudes: {
         key: 'donkey',
-        link: './public/donkey.glb',
+        link: '../public/rooms/donkey.glb',
         position: { x: 0, y: 3, z: -10 },
           
       }
@@ -110,13 +110,13 @@ export const paintingData = [
       Thus, "Three Male Deer in the Fontainebleau Forest" embodies not only Rosa Bonheur's artistic talent but also her commitment to the animal cause and environmental preservation, making this work a poignant testimony of her time and a source of inspiration for future generations.`,
       cadre: {
         key: 'framecerf',
-        link: './public/cerfframe.glb',
-        cadre: './public/frame1.glb',
+        link: '../public/rooms/cerfframe.glb',
+        cadre: './public/rooms/frame1.glb',
         position: { x: 0, y: 3, z: -29.5 },
       },
       etudes: {
         key: 'cerf',
-        link: './public/cerf1.glb',
+        link: '../public/rooms/cerf1.glb',
         position: { x: 0, y: 3, z: -10 },
           
       }

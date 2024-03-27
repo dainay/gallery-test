@@ -2,7 +2,7 @@ export const paintingData = [
   // Front Wall
   ...Array.from({ length: 1 }, (_, i) => ({
      
-    imgSrc: `../img/painings/1.jpg`,  
+    imgSrc: `./img/painings/1.jpg`,  
     width: 5, // width of the painting
     height: 3, // height of the painting
     position: { x: 10 , y: 2, z: -19.5 }, // position of the painting
