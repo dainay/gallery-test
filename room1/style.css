@@ -537,7 +537,7 @@ width: 5vw;
   -moz-transform: translate();
   -ms-transform: translate();
   -o-transform: translate();
-  background-color: #121212a0;
+  /* background-color: #121212a0; */
   padding: 10px 20px;
   
 }

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>3D Art Gallery</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div id="menu">
+      <div id="content">
+        <div class="title">
+          <div class="logo-menu"><img src="./../img/logo.svg" alt="" /></div>
+          <h1>À TRAVERS LEURS REGARDS</h1>
+        </div>
+        <div class="title-info">
+          <p>
+            <b>
+              Nous avons l'honneur d'avoir l'une des archives de Rosa Bonheur dans cette pièce. Approchez-vous de chaque peinture pour en savoir plus, puis explorez les études de Bonheur ainsi que les photographies d'animaux d'aujourd'hui. Tant les études que les photos nous permettent de comprendre à quel point Rosa Bonheur était délicate dans les détails. <br> <b>Nous voyons tout à travers leurs regards.</b>
+              <br><br>
+              Dans cette salle verte, nous avons présenté des tableaux représentant la tranquillité et l'intimité familiale.
+
+            </b>
+          </p>
+        </div>
+
+        <div id="play_button">
+          <p>Commencer la visite</p>
+        </div>
+        <div id="about_button_container">
+          <button id="about_button">À propos</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="about-overlay">
+      <button id="close-about">X</button>
+      <div class="text-wrapp-about">
+      <div>
+        <h1>A propos de l'exposition</h1>
+        <p>
+          Un groupe de 6 étudiants en deuxième année du BUT Métiers du Multimédia et de l’Internet avait pour projet la création d'une exposition virtuelle. Mais il ne s'agissait pas seulement de la concevoir ; il fallait également assurer une communication efficace. Ainsi, 3 élèves du parcours développement web se sont associés à 3 étudiants du parcours création numérique. Cette collaboration a donné naissance à une agence de communication fictive nommée Kléio, spécialisée dans la mise en valeur des femmes artistes. Parallèlement, elle a permis la réalisation de l'exposition virtuelle interactive intitulée "À travers leurs regards", mettant en lumière les œuvres de Rosa Bonheur, célèbre peintre du 19e siècle.
+          </p>
+          <p>
+          Pour la réalisation de cette exposition interactive, notre principal objectif était d'aider un large public à en apprendre davantage sur une personnalité aussi exceptionnelle et singulière que Rosa Bonheur. Après avoir visité son château à Thomery, nous avons décidé que la meilleure façon de la présenter serait de recréer son atelier. Certains objets nous ont semblé particulièrement intéressants, c'est pourquoi nous avons ajouté de petites histoires qui détaillent sa personnalité.
+          </p>
+          <p>
+          L'objectif principal de notre exposition était de souligner comment Rosa Bonheur représentait l'art des animaux sur ses toiles. C'est le regard des animaux qui distingue ses peintures, nous permettant de voir de véritables lions, chiens, renards, vaches et bien d'autres de ses animaux. Afin de mettre en valeur le réalisme de ce regard et émotions qu'éprouve ces animaux, nous avons décidé de placer à côté des tableaux de véritables photographies, ainsi que des études de Rosa, qui permettent de voir à quel point elle était méticuleuse dans la préparation de son travail, en détaillant chaque muscle.
+          </p>
+               
+<p class="about-bottom">Cette exposition a été créée avec la technologie ThreeJs. Pour toutes vos questions et suggestions, vous pouvez contacter la développeuse de l'exposition, Daria Iarovaia, à l'adresse iarovaiadaria@gmail.com. Nous remercions très chaleureusement <a href="https://github.com/theringsofsaturn">Emilian Kasemi</a>, grâce à la vidéo explicative de qui ce projet est devenu possible.</p>
+      </div>
+      <div class="img-about"><img   src="./../img/atelier.jpg" alt="" /></div>
+
+    </div>
+    </div>
+
+    <div id="info-panel">
+      <div id="info-header">
+        <h3>Controls</h3>
+        <button id="toggle-info">X</button>
+      </div>
+      <div id="info-content">
+        <p><b>Z/A/S/D :</b> Se déplacer</p> <p><b>Souris :</b> Regarder autour</p> <p><b>Espace :</b> Débloquer/bloquer le curseur</p> <p><b>M :</b> Afficher le menu</p> <p><b>G :</b> Démarrer la musique</p> <p><b>P :</b> Arrêter la musique</p>
+
+      </div>
+    </div>
+
+    <!-- <div id="audio_controls">
+      <button id="start_audio">Music on</button>
+      <button id="stop_audio">Music off </button>
+    </div> -->
+
+    <div id="painting-info">
+
+      
+    </div>
+  <audio id="backgroundMusic" src="./../sounds/sirenes.mp3" loop autoplay ></audio>
+    <div class="buttons-wrapper">
+      <button id="show-fr"  class="btn active-button">FR</button>
+      <button id="show-eng"  class="btn" >EN</button>
+      <!-- <button id="hide-all" class="btn">Cacher/Hide</button> -->
+    </div>
+
+    <script type="module" src="./room2.js"></script>
+  
+   
+  </body>
+ 
+    
+</html>
