@@ -6,8 +6,8 @@ export const keysPressed = {
   ArrowDown: false,
   ArrowLeft: false,
   ArrowRight: false,
-  w: false,
-  a: false,
+  z: false,
+  q: false,
   s: false,
   d: false,
 };
@@ -22,10 +22,10 @@ export const updateMovement = (delta, controls, camera, walls) => {
   if (keysPressed.ArrowRight || keysPressed.d) {
     controls.moveRight(moveSpeed);
   }
-  if (keysPressed.ArrowLeft || keysPressed.a) {
+  if (keysPressed.ArrowLeft || keysPressed.q) {
     controls.moveRight(-moveSpeed);
   }
-  if (keysPressed.ArrowUp || keysPressed.w) {
+  if (keysPressed.ArrowUp || keysPressed.z) {
     controls.moveForward(moveSpeed);
   }
   if (keysPressed.ArrowDown || keysPressed.s) {

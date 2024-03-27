@@ -9,8 +9,8 @@ export const  createPaintings = (scene, textureLoader) => {
   paintingData.forEach((data) => {
    
     const painting = new THREE.Mesh( 
-      new THREE.PlaneGeometry(data.width, data.height),
-      new THREE.MeshLambertMaterial({ map: textureLoader.load(data.imgSrc) })
+      new THREE.PlaneGeometry(0.01, 0.001),
+      new THREE.MeshLambertMaterial({ map: textureLoader.load( ) })
     );
 
     painting.position.set(data.position.x, data.position.y, data.position.z); 

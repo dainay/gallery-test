@@ -82,7 +82,7 @@ Elle invite le spectateur à se perdre dans les paysages grandioses des Highland
 
       etudes: {
         key: 'horse',
-        link: './public/publichorse.glb',
+        link: './public/horse.glb',
         position: { x: 0, y: 3, z: -10 },
           
       }
