@@ -16,10 +16,12 @@
   top: 10vh;
 padding: 25px 45px;
 font-size: 1.2rem;
+
 }
 
 #object-info h2, #object-info2 h2  {
 margin-bottom: 0.2rem;
+font-size: 1.6rem;
 }
 
 #object-info2 {

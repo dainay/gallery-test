@@ -127,8 +127,8 @@ document.getElementById("toggle-info").addEventListener("click", () => {
   document.getElementById("toggle-info").innerText = document
     .getElementById("info-panel")
     .classList.contains("collapsed")
-    ? "Show"
-    : "Hide";
+    ? "Afficher"
+    : "Cacher";
 });
 
 document.getElementById("about_button").addEventListener("click", function () {

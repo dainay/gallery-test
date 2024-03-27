@@ -35,7 +35,7 @@ function onClick(camera, paintings) {
      
 
       if (object.userData.name == "door") {
-        window.location.href = "./index.html";
+        window.location.href = "./../index.html";
         return;
       }
 

@@ -18,9 +18,10 @@ export const loadPaintingcowModel = (scene, callback) => {
         id: 5,
         name: 'phorse',
         interactive: true,
-        title: "<h2>Horse paining</h2>",
-        titleeng: "<h2>Horse paining</h2>",
-        text: "<p>Alors que les lions sont utilisés comme symboles de puissance, Rosa Bonheur choisi ici de les peindre en famille, allongés calmement. <br> Rosa Bonheur voulait représenter les animaux fidèlement. Pour elle, le lion, comme n’importe quel animal, n’était pas un symbole, mais tout simplement un être vivant. Elle représente ici trois petits lionceaux aux côtés de leurs parents, dans un moment de calme. Il n’y a ni sang ni combat, ni puissance ni crainte. <br> Rosa connaissait bien les lions, bien que vivant en France près de Fontainebleau, puisqu’elle avait des lions de compagnie. Ils vivaient en effet librement chez elle. Elle pouvait donc observer leur comportement, paisible ou agité. <br> Pour Rosa, les études préparatoires étaient indispensables et constituaient une étape aussi importante que la réalisation du tableau en lui-même. Elle dira même à ses élèves « Gardez-vous de vouloir aller trop vite, avant de prendre les pinceaux, assurez d’abord votre crayon, devenez fortes dans la science du dessin. </p>",
+        title: "<h2>Portrait de Dubufe</h2>",
+        titleeng: "<h2>Portrait of Dubufe</h2>",
+        text: "<p>Ce portrait de Rosa Bonheur a été réalisé par Édouard-Louis Dubufe en 1857, célèbre peintre de l’époque. Il peint alors Bonheur droite, un pinceau et un livre d’études dans les mains, appuyée à une commode. Toutefois, en voyant l’œuvre finale, Bonheur n’était pas satisfaite et préféra repeindre une vache au-dessus du meuble en bois dessiné par Dubufe. Cette dernière version du portrait lui ressemblait bien plus, selon elle.</p>",
+        texteng: 'This portrait of Rosa Bonheur was painted by Édouard-Louis Dubufe in 1857, a famous painter of the time. He depicted Bonheur standing upright, holding a paintbrush and a study book, leaning against a chest of drawers. However, upon seeing the final work, Bonheur was not satisfied and preferred to repaint a cow above the wooden furniture drawn by Dubufe. According to her, this latter version of the portrait resembled her much more.',
       
         position: {
           top: 30,

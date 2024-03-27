@@ -121,7 +121,7 @@ loadPainting1Model(scene);
 loadPainting2Model(scene); 
 loadPtopModel(scene); 
 loadWalllightModel(scene); 
-loadStickModel(scene); 
+
  
  
 //room left
@@ -236,3 +236,4 @@ function animate() {
  
 
 setupVR(renderer);
+loadStickModel(scene); 

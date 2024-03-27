@@ -18,9 +18,10 @@ export const loadWallModel = (scene,  callback) => {
         id: 8,
         name: 'wall',
         interactive: true,
-        title: "<h2>les photos de Nathalie Micas et Anna Klumpke</h2>",
-        texteng: "<h2> Rosa Bonheur never had a husband, but she didn't live alone all her life either. She spent many years with her childhood friend, Nathalie Micas, and later with the painter Anna Klumpke until the end of her life.</h2>",
-        text: "<p>Rosa Bonheur n'a jamais eu de mari, mais elle n'a pas non plus vécu  seule toute sa vie. Elle a passé de nombreuses années avec son amie  d'enfance, Nathalie Micas, et plus tard avec la peintre Anna Klumpke  jusqu'à la fin de sa vie. </p>",
+        title: "<h2>Nathalie Micas et Anna Klumpke</h2>",
+        texteng: "<p> Rosa Bonheur n'a jamais eu de mari, mais elle n'a pas non plus vécu  seule toute sa vie. Elle a passé de nombreuses années avec son amie  d'enfance, Nathalie Micas, et plus tard avec la peintre Anna Klumpke  jusqu'à la fin de sa vie.</p>",
+        text: "<p>Rosa Bonheur never had a husband, but she didn't live alone all her life either. She spent many years with her childhood friend, Nathalie Micas, and later with the painter Anna Klumpke until the end of her life.</p>",
+        texteng: " Nathalie Micas et Anna Klumpke",
       
         position: {
           top: 30,

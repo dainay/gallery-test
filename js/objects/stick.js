@@ -21,6 +21,8 @@ export const loadStickModel = (scene) => {
 
       scene.add(stick, stick2);
 
+      document.getElementById("loader").style.display = "none";
+
     },
     function (xhr) {
       console.log((xhr.loaded / xhr.total) * 100 + "% loaded");
@@ -29,4 +31,8 @@ export const loadStickModel = (scene) => {
       console.log("Error loading stick model", error);
     }
   );
+
+
+
+
 };

@@ -13,9 +13,10 @@ export const loadPhoneModel = (scene, callback) => {
         id: 6,
         name: 'phone',
         interactive: true,
-        title: "<h2>phone</h2>",
-        titleeng: "<h2>phone</h2>",
-        text: "<p>Alors que les lions sont utilisés comme symboles de puissance, Rosa Bonheur choisi ici de les peindre en famille, allongés calmement. <br> Rosa Bonheur voulait représenter les animaux fidèlement. Pour elle, le lion, comme n’importe quel animal, n’était pas un symbole, mais tout simplement un être vivant. Elle représente ici trois petits lionceaux aux côtés de leurs parents, dans un moment de calme. Il n’y a ni sang ni combat, ni puissance ni crainte. <br> Rosa connaissait bien les lions, bien que vivant en France près de Fontainebleau, puisqu’elle avait des lions de compagnie. Ils vivaient en effet librement chez elle. Elle pouvait donc observer leur comportement, paisible ou agité. <br> Pour Rosa, les études préparatoires étaient indispensables et constituaient une étape aussi importante que la réalisation du tableau en lui-même. Elle dira même à ses élèves « Gardez-vous de vouloir aller trop vite, avant de prendre les pinceaux, assurez d’abord votre crayon, devenez fortes dans la science du dessin. </p>",
+        title: "<h2>Alouette</h2>",
+        titleeng: "<h2>Lark call</h2>",
+        text: "<p>Cet objet étonnant est un appeau à alouette. Il était couramment utilisé pour la chasse à l’alouette : en effet, les bruits qu’il fait attirent les oiseaux. Rosa Bonheur l’utilisait également pour les attirer. Mais elle ne cherchait pas à les abattre ; une fois les oiseaux près d'elle, elle pouvait les dessiner à sa guise.</p>",
+        texteng: "This remarkable object is a lark call. It was commonly used for lark hunting: indeed, the sounds it makes attract the birds. Rosa Bonheur also used it to attract them. However, she wasn't seeking to shoot them; once the birds were near her, she could draw them as she pleased.",
       
         position: {
           top: 30,

@@ -65,9 +65,7 @@ document.getElementById('show-fr').addEventListener('click', chooseFr);
 
 
 
- 
-document.getElementById("start_audio").addEventListener("click", startAudio());
-document.getElementById("stop_audio").addEventListener("click", stopAudio());
+
 
 
 setupVR(renderer);

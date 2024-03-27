@@ -18,7 +18,7 @@ export const setupRendering = (
 
     updateMovement(delta, controls, camera, walls);
 
-    const distanceThreshold = 10;
+    const distanceThreshold = 11;
 
     // console.log(paintings);
     let paintingToShow;
@@ -32,6 +32,14 @@ export const setupRendering = (
     if (paintingToShow) {
       // console.log("paintingToShow", paintingToShow);
       displayPaintingInfo(paintingToShow, camera);
+
+      if ( camera.position.distanceTo(paintingToShow.position) < 6) {
+document.getElementById('painting-info').style.display = 'none';
+      }
+      if ( camera.position.distanceTo(paintingToShow.position) > 6) {
+        document.getElementById('painting-info').style.display = 'block';
+              }
+
     } else {
       hidePaintingInfo(camera);
     }

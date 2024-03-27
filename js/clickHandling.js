@@ -40,12 +40,12 @@ function onClick(camera, objects, renderer, scene) {
 
     if (object && object.userData) {
       // Make sure object exists and has userData
-      console.log(object, "OBJECT WITH USER DATA");
+      // console.log(object, "OBJECT WITH USER DwATA");
 
       let newPosition; // Declare once, outside the conditionals
 
       if (object.userData.name == "door") {
-        window.location.href = "./room1.html";
+        window.location.href = "./room1/room1.html";
         return;
       } else if (object.userData.name == "fireplace") {
         console.log("fireplace enter");
@@ -105,7 +105,7 @@ function onClick(camera, objects, renderer, scene) {
       if (object.userData.name == "wall") {
         document.querySelector("#object-info2").style.display = "block";
         document.querySelector("#object-info2").innerHTML =
-          "<h2> la famille Bonheur</h2> <p>Rosa Bonheur, bien que née à Bordeaux, vécut à Paris dès l’âge de ses 7ans. Elle y apprendra le dessin et la peinture grâce à son père, professeur d’art. Ce dernier quitta le foyer familial pour rejoindre l’ordre des Saint-Simoniens, laissant femme et enfants dernière lui. La mère de Rosa Bonheur dû travailler pour subvenir aux besoins de ses enfants et de son mari, à qui elle versait une pension. Elle mourut d’épuisement. <br>    Cet événement bouleversa grandement Bonheur, qui désira dès lors être indépendante. À 13 ans, elle copiait les peintures exposées au Louvre ; à 19ans elle y réalisait sa première exposition. </p>          <h2>Family Bonheur</h2> <p>Rosa Bonheur was born in Bordeaux, but she lived in Paris from the age of 7. She learned drawing and painting there, thanks to her father, who was an art teacher. He left the family to join the Saint-Simonians, leaving his wife and children behind. Rosa Bonheur's mother had to work to support her children and her husband, to whom she paid alimony. She died of exhaustion.     This made Bonheur very sad, and she wanted to become independent. She copied paintings exhibited at the Louvre at the age of 13. And she held her first exhibition there at 19.</p>,";
+          "<h2> La famille Bonheur</h2> <p style='font-size:1.2rem;'>Rosa Bonheur apprendra le dessin et la peinture grâce à son père, professeur d’art. À 13 ans, elle copiait les peintures exposées au Louvre ; à 19ans elle y réalisait sa première exposition.        Rosa Bonheur n’était pas la seule artiste de la famille : tous ses frères et sœurs ont en effet suivi les traces du père. Son frère Auguste et sa sœur Juliette se sont consacrés à la peinture, tandis que son autre frère Isidore est devenu sculpteur. Ils ont chacun connu leur succès, mais Rosa Bonheur a été la seule à marquer drastiquement son époque. Ici vous vous leurs peintures. </p>  <h2>Family Bonheur</h2>                   <p style='font-size:1.2rem;'>Rosa Bonheur learned drawing and painting, thanks to her father, who was an art teacher. She copied paintings exhibited at the Louvre at the age of 13. And she held her first exhibition there at 19. Rosa Bonheur wasn't the only artist in the family: all her brothers and sisters indeed followed in their father's footsteps. Her brother Auguste and her sister Juliette dedicated themselves to painting, while her other brother Isidore became a sculptor. They each found success, but Rosa Bonheur was the only one to significantly impact her era. You can see their paintings here. </p>";
       }
 
       // Make sure newPosition has been assigned before using it
