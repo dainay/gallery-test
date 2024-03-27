@@ -98,14 +98,14 @@ function onClick(camera, objects, renderer, scene) {
         object.userData.position.left + "px";
 
       document.querySelector("#object-info").innerHTML =
-        object.userData.title + object.userData.text;
+        object.userData.title + object.userData.text + object.userData.titleeng + object.userData.texteng;
 
    
 
       if (object.userData.name == "wall") {
         document.querySelector("#object-info2").style.display = "block";
         document.querySelector("#object-info2").innerHTML =
-          "<h2>Wall</h2> <p>Alors que les lions sont utilisés comme symboles de puissance, Rosa Bonheur choisi ici de les peindre en famille, allongés calmement. <br> Rosa Bonheur voulait représenter les animaux fidèlement. Pour elle, le lion, comme n’importe quel animal, n’était pas un symbole, mais tout simplement un être vivant. Elle représente ici trois petits lionceaux aux côtés de leurs parents, dans un moment de calme. Il n’y a ni sang ni combat, ni puissance ni crainte. <br> Rosa connaissait bien les lions, bien que vivant en France près de Fontainebleau, puisqu’elle avait des lions de compagnie. Ils vivaient en effet librement chez elle. Elle pouvait donc observer leur comportement, paisible ou agité. <br> Pour Rosa, les études préparatoires étaient indispensables et constituaient une étape aussi importante que la réalisation du tableau en lui-même. Elle dira même à ses élèves « Gardez-vous de vouloir aller trop vite, avant de prendre les pinceaux, assurez d’abord votre crayon, devenez fortes dans la science du dessin. </p>";
+          "<h2> la famille Bonheur</h2> <p>Rosa Bonheur, bien que née à Bordeaux, vécut à Paris dès l’âge de ses 7ans. Elle y apprendra le dessin et la peinture grâce à son père, professeur d’art. Ce dernier quitta le foyer familial pour rejoindre l’ordre des Saint-Simoniens, laissant femme et enfants dernière lui. La mère de Rosa Bonheur dû travailler pour subvenir aux besoins de ses enfants et de son mari, à qui elle versait une pension. Elle mourut d’épuisement. <br>    Cet événement bouleversa grandement Bonheur, qui désira dès lors être indépendante. À 13 ans, elle copiait les peintures exposées au Louvre ; à 19ans elle y réalisait sa première exposition. </p>          <h2>Family Bonheur</h2> <p>Rosa Bonheur was born in Bordeaux, but she lived in Paris from the age of 7. She learned drawing and painting there, thanks to her father, who was an art teacher. He left the family to join the Saint-Simonians, leaving his wife and children behind. Rosa Bonheur's mother had to work to support her children and her husband, to whom she paid alimony. She died of exhaustion.     This made Bonheur very sad, and she wanted to become independent. She copied paintings exhibited at the Louvre at the age of 13. And she held her first exhibition there at 19.</p>,";
       }
 
       // Make sure newPosition has been assigned before using it

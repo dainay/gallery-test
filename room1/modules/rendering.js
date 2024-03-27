@@ -10,7 +10,7 @@ export const setupRendering = (
   controls,
   walls
 ) => {
-  console.log("Setup painting in rendering", paintings);
+  // console.log("Setup painting in rendering", paintings);
   const clock = new THREE.Clock();
 
   let render = function () {
@@ -20,7 +20,7 @@ export const setupRendering = (
 
     const distanceThreshold = 10;
 
-    console.log(paintings);
+    // console.log(paintings);
     let paintingToShow;
     paintings.forEach((painting) => {
       const distanceToPainting = camera.position.distanceTo(painting.position);
@@ -30,7 +30,7 @@ export const setupRendering = (
     });
 
     if (paintingToShow) {
-      console.log("paintingToShow", paintingToShow);
+      // console.log("paintingToShow", paintingToShow);
       displayPaintingInfo(paintingToShow, camera);
     } else {
       hidePaintingInfo(camera);

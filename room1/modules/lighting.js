@@ -3,12 +3,12 @@ import * as THREE from "three";
 
 export const setupLighting = (scene, paintings) => {
 
-// const ambientLight = new THREE.AmbientLight(0xbbbbbb, 3); // soft white light
+// const ambientLight = new THREE.AmbientLight(0xbbbbbb, 0.5); // soft white light
 // scene.add(ambientLight);
 
 const groupLight = new THREE.Group();
   
-  const baltoLight = new THREE.PointLight(0xffffff, 120);
+  const baltoLight = new THREE.PointLight(0xffffff, 195);
 baltoLight.decay = 2.3;
 
   baltoLight.position.set(1,5,-25);
@@ -34,7 +34,7 @@ groupLight.add(cerfLight);
 
 
 
-  const exit = new THREE.PointLight(0x2b5720, 100);
+  const exit = new THREE.PointLight(0x2b5720, 150);
 exit.position.set(0,13,5);
 scene.add(exit);
 
@@ -42,7 +42,7 @@ scene.add(exit);
   
 const lamps = new THREE.Group();
 
-const lamp1 = new THREE.PointLight(0xffffff, 20);
+const lamp1 = new THREE.PointLight(0xffffff, 200);
 lamp1.position.set(6,8.5,4);
 lamps.add(lamp1);
 

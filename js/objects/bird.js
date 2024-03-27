@@ -34,7 +34,7 @@ bird.rotation.y = Math.PI;
       bird.traverse((child) => {
         if (child.isMesh) {
           child.material.metalness = 1;
-          child.material.roughness = 0.5;
+          child.material.roughness = 1;
         }
       });
 

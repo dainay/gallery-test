@@ -16,9 +16,11 @@ export const loadStickModel = (scene) => {
       stick.scale.set(scale, scale, scale);
      
 
- 
+ const stick2 = stick.clone()
+ stick2.position.set(14,2.6,11)
 
-      scene.add(stick);
+      scene.add(stick, stick2);
+
     },
     function (xhr) {
       console.log((xhr.loaded / xhr.total) * 100 + "% loaded");

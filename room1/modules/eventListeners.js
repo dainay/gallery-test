@@ -4,6 +4,8 @@ import { startAudio, stopAudio } from "./audioGuide.js";
 
 let lockPointer = true;
 let showMenuOnUnlock = false;
+const backgroundMusic = document.getElementById("backgroundMusic");
+console.log(backgroundMusic, "BACKGROUND MUSIC");;
 
 // add the controls parameter which is the pointer lock controls and is passed from main.js where setupEventListeners is called
 export const setupEventListeners = (controls, camera, scene) => {
@@ -26,9 +28,7 @@ export const setupEventListeners = (controls, camera, scene) => {
     showMenuOnUnlock = false;
   });
 
-  // Add event listeners for the audio guide buttons
-  document.getElementById("start_audio").addEventListener("click", startAudio);
-  document.getElementById("stop_audio").addEventListener("click", stopAudio);
+
 };
 
 // toggle the pointer lock
@@ -112,8 +112,8 @@ document.getElementById("toggle-info").addEventListener("click", () => {
   document.getElementById("toggle-info").innerText = document
     .getElementById("info-panel")
     .classList.contains("collapsed")
-    ? "Show"
-    : "Hide";
+    ? "+"
+    : "x";
 });
 
 document.getElementById("about_button").addEventListener("click", function () {

@@ -15,8 +15,10 @@ export const loadCameraModel = (scene, callback) => {
         id: 1,
         name: 'camera',
         interactive: true,
-        title: "<h2>Camera</h2>",
-        text: "<p>Alors que les lions sont utilisés comme symboles de puissance, Rosa Bonheur choisi ici de les peindre en famille, allongés calmement. <br> Rosa Bonheur voulait représenter les animaux fidèlement. Pour elle, le lion, comme n’importe quel animal, n’était pas un symbole, mais tout simplement un être vivant. Elle représente ici trois petits lionceaux aux côtés de leurs parents, dans un moment de calme. Il n’y a ni sang ni combat, ni puissance ni crainte. <br> Rosa connaissait bien les lions, bien que vivant en France près de Fontainebleau, puisqu’elle avait des lions de compagnie. Ils vivaient en effet librement chez elle. Elle pouvait donc observer leur comportement, paisible ou agité. <br> Pour Rosa, les études préparatoires étaient indispensables et constituaient une étape aussi importante que la réalisation du tableau en lui-même. Elle dira même à ses élèves « Gardez-vous de vouloir aller trop vite, avant de prendre les pinceaux, assurez d’abord votre crayon, devenez fortes dans la science du dessin. </p>",
+        title: "<h2>Appareil photo</h2>",
+        titleeng: "<h2>Photo Camera</h2>",
+        text: "<p>De son vivant, Rosa Bonheur était une véritable célébrité. Elle donn  ait interviews et photographies pour se faire connaitre, et ses toiles étaient reproduites pour être accessibles à la portée d’un plus grand nombre. Des visiteurs curieux venaient parfois  l’observer peindre dans son atelier, à Paris. Toute cette agitation autour d’elle la pousse en 1860 à venir vivre au château de By, qu’elle achète avec l’argent des ventes de ses œuvres.</p>",
+        texteng: 'During her lifetime, Rosa Bonheur was a true celebrity. She gave interviews and posed for photographs to become known, and her paintings were reproduced to make them accessible to a larger audience. Curious visitors would sometimes come to watch her paint in her studio in Paris. All this attention around her encouraged her in 1860 to move to the By Castle, which she bought with the money from sales of her works.',
       
         position: {
           top: 30,

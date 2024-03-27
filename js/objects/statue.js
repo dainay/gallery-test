@@ -13,8 +13,10 @@ export const loadStatueModel = (scene, callback) => {
         id: 7,
         name: 'statue',
         interactive: true,
-        title: "<h2>statue</h2>",
-        text: "<p>Alors que les lions sont utilisés comme symboles de puissance, Rosa Bonheur choisi ici de les peindre en famille, allongés calmement. <br> Rosa Bonheur voulait représenter les animaux fidèlement. Pour elle, le lion, comme n’importe quel animal, n’était pas un symbole, mais tout simplement un être vivant. Elle représente ici trois petits lionceaux aux côtés de leurs parents, dans un moment de calme. Il n’y a ni sang ni combat, ni puissance ni crainte. <br> Rosa connaissait bien les lions, bien que vivant en France près de Fontainebleau, puisqu’elle avait des lions de compagnie. Ils vivaient en effet librement chez elle. Elle pouvait donc observer leur comportement, paisible ou agité. <br> Pour Rosa, les études préparatoires étaient indispensables et constituaient une étape aussi importante que la réalisation du tableau en lui-même. Elle dira même à ses élèves « Gardez-vous de vouloir aller trop vite, avant de prendre les pinceaux, assurez d’abord votre crayon, devenez fortes dans la science du dessin. </p>",
+        title: "<h2>Statue d'une vache </h2>",
+        titleeng: "<h2>Statue of a bull</h2>",
+        text: "<p>Rosa Bonheur est née dans une famille d’artistes. Son père, étant professeur de peinture, lui a enseigné les bases de cet art. Ses frères et sœurs sont tous des artistes, mais c’est elle qui a eu le plus de succès. Son activité principale était la peinture et le crayonner, mais elle avait également de grandes compétences en sculpture. Elle utilisait ce talent surtout pour étudier l’anatomie des animaux en trois dimensions. </p>",
+        texteng: '<p>Rosa Bonheur was born into a family of artists. Her father, who was a painting teacher, taught her how to do art. All her brothers and sisters were artists too, but she was the most successful. She mostly painted and drew, but she was also really good at sculpting. She used this skill mainly to study how animals looked in 3D.</p>',
       
         position: {
           top: 30,

@@ -52,5 +52,5 @@ export function createPaintings(scene, textureLoader) {
   return paintings;
 }
 
-console.log("models", models);
+// console.log("models", models);
 export { models };

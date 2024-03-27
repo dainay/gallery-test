@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./room1/style.css" />
+   
 </head>
 <body>
 
@@ -66,26 +68,27 @@
       <div id="info-panel">
         <div id="info-header">
           <h3>Controls</h3>
-          <button id="toggle-info">Hide</button>
+          <button id="toggle-info"> - </button>
         </div>
         <div id="info-content">
-          <p><b>W/A/S/D:</b> Move around</p>
-          <p><b>Mouse:</b> Look around</p>
-          <p><b>Space:</b> Toggle pointer lock</p>
-          <p><b>M:</b> Show Menu</p>
-          <p><b>Enter:</b> Start exploration</p>
-          <p><b>Esc:</b> Stop exploration</p>
-          <p><b>G:</b> Start audio guide</p>
-          <p><b>P:</b> Stop audio guide</p>
+          <p><b>Z/Q/S/D :</b> Se déplacer</p>
+<p><b>Souris :</b> Regarder autour</p>
+<p><b>Espace :</b> Bloquer / Débloquer la caméra</p>
+<p><b>M :</b> Afficher le Menu</p>
+
+<p><b>G :</b> Lancer la musique</p>
+<p><b>P :</b> Arrêter la musique</p>
+<p><b>L :</b> Allumer une lampe</p>
+<p><b>O :</b> Mode d'assistance</p>
         </div>
       </div>
   
-      <div id="audio_controls">
-        <button id="start_audio">Start Audio Guide</button>
-        <button id="stop_audio">Stop Audio Guide</button>
-      </div>
+      
   
       <div id="painting-info"></div>
+
+      <audio id="backgroundMusic" src="./../sounds/salon.mp3" loop autoplay ></audio>
+
 
       <div id="object-info" style="display: none;">
         
@@ -94,6 +97,7 @@
       <div id="counter"> <span id="addNumber">0</span>  / 9 objets trouvés</div>
       <div id="gameopen">
       </div>
+  
 
     <script type="module" src="main.js"></script>
 </body>

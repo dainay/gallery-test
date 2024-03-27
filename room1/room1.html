@@ -67,30 +67,34 @@
     <div id="info-panel">
       <div id="info-header">
         <h3>Controls</h3>
-        <button id="toggle-info">Hide</button>
+        <button id="toggle-info">X</button>
       </div>
       <div id="info-content">
-        <p><b>W/A/S/D:</b> Move around</p>
-        <p><b>Mouse:</b> Look around</p>
-        <p><b>Space:</b> Toggle pointer lock</p>
-        <p><b>M:</b> Show Menu</p>
-        <p><b>Enter:</b> Start exploration</p>
-        <p><b>Esc:</b> Stop exploration</p>
-        <p><b>G:</b> Start audio guide</p>
-        <p><b>P:</b> Stop audio guide</p>
+        <p><b>W/A/S/D :</b> Se déplacer</p> <p><b>Souris :</b> Regarder autour</p> <p><b>Espace :</b> Débloquer/bloquer le curseur</p> <p><b>M :</b> Afficher le menu</p> <p><b>G :</b> Démarrer la musique</p> <p><b>P :</b> Arrêter la musique</p>
+
       </div>
     </div>
 
     <div id="audio_controls">
-      <button id="start_audio">Start Audio Guide</button>
-      <button id="stop_audio">Stop Audio Guide</button>
+      <button id="start_audio">Music on</button>
+      <button id="stop_audio">Music off </button>
     </div>
 
     <div id="painting-info">
 
       
     </div>
+  <audio id="backgroundMusic" src="./../sounds/sirenes.mp3" loop autoplay ></audio>
+    <div class="buttons-wrapper">
+      <button id="show-fr"  class="btn active-button">FR</button>
+      <button id="show-eng"  class="btn" >EN</button>
+      <!-- <button id="hide-all" class="btn">Cacher/Hide</button> -->
+    </div>
 
     <script type="module" src="./room1.js"></script>
+  
+   
   </body>
+ 
+    
 </html>

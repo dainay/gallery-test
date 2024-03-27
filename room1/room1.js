@@ -10,17 +10,22 @@ import { setupRendering } from "./modules/rendering.js";
 import { setupEventListeners } from "./modules/eventListeners.js";
 import { addObjectsToScene } from "./modules/sceneHelpers.js";
 import { setupPlayButton } from "./modules/menu.js";
-// import { setupAudio } from "./modules/audioGuide.js";
+
 import { clickHandling } from "./modules/clickHandling.js";
 import { setupVR } from "./modules/VRSupport.js";
 import { loadDoorModel } from "./modules/door.js";
 import { loadExitModel } from "./modules/exit.js";
 import { loadLampModel } from "./modules/lamps.js";
+
+import { chooseEn } from "./modules/language.js";
+import { chooseFr } from "./modules/language.js";
+
+import { startAudio, stopAudio } from "./modules/audioGuide.js";
  
   
 let { camera, controls, renderer } = setupScene();
 
-// setupAudio(camera);
+ 
 
 const textureLoader = new THREE.TextureLoader();
 
@@ -50,5 +55,19 @@ loadDoorModel(scene, (DoorModel) => {
   loadExitModel(scene); 
   loadLampModel(scene); 
  
+
+   let currentLanguage = localStorage.getItem('currentLanguage') || 'fr'; 
+
+
+  document.getElementById('show-eng').addEventListener('click', chooseEn);
+document.getElementById('show-fr').addEventListener('click', chooseFr);
+
+
+
+
+ 
+document.getElementById("start_audio").addEventListener("click", startAudio());
+document.getElementById("stop_audio").addEventListener("click", stopAudio());
+
 
 setupVR(renderer);

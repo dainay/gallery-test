@@ -54,6 +54,8 @@ import { loadCameraModel } from "./js/objects/camera.js";
 import { loadPaperModel } from "./js/objects/paper.js";
 import { loadStatueModel } from "./js/objects/statue.js";
 import { loadPhoneModel } from "./js/objects/phone.js";
+import { startAudio, stopAudio } from "./js/audioGuide.js";
+
 
 let { camera, controls, renderer } = setupScene();
 
@@ -230,7 +232,7 @@ function animate() {
  
 
   
-
+ 
  
 
 setupVR(renderer);

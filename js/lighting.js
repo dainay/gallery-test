@@ -1,19 +1,6 @@
 import * as THREE from "three"; 
  import { counter } from "./clickHandling";
 
-  
-// export const updateLightingBasedOnCounter = (counterSize) => {
-//     if (counterSize === 2) {
-
-
-//         
- 
-
-
-//     }
-// };
-
-
 
 
 export const setupLighting = (scene, counter) => {
@@ -67,9 +54,16 @@ const wallLight = new THREE.PointLight(0xffffbb, 7);
 wallLight.position.set(-8.7,3.32,18);
 scene.add(wallLight);
 
-// const table1Light = new THREE.PointLight(0xffffbb, 10, 10);
-// table1Light.position.set(-9,3,0);
-// scene.add(table1Light);
+
+const pianoLight = new THREE.PointLight(0xffffbb, 10,10,3);
+
+pianoLight.position.set(14,4.2,11,3);
+scene.add(pianoLight);
+
+
+const tableLight = new THREE.PointLight(0xffffbb, 30);
+tableLight.position.set(-19,11,13);
+scene.add(tableLight);
 
 // const table2Light = new THREE.PointLight(0xffffbb, 10, 10);
 // table2Light.position.set(9,4,-4);
@@ -83,7 +77,10 @@ const sphereSize = 0.07;
 const pointLightHelper = new THREE.PointLightHelper( wallLight, sphereSize );
 scene.add( pointLightHelper );
 
-
+const pointLightHelper2 = new THREE.PointLightHelper( tableLight, sphereSize );
+scene.add( pointLightHelper2 );
+const pointLightHelper3 = new THREE.PointLightHelper( pianoLight, sphereSize );
+scene.add( pointLightHelper3 );
 
 
 

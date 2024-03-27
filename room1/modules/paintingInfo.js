@@ -2,6 +2,7 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import * as THREE from "three";
 import { scene } from './scene.js';
 import { models } from './paintings.js'; 
+import { updateLanguage } from './language.js';
 
  
 let currentVisibleModel = null; // На начальном этапе активной модели нет
@@ -12,13 +13,25 @@ export const displayPaintingInfo = (painting, camera) => {
 console.log(painting, 'IMPORTANT ONE PASS INFO');
 const cameraOld = camera.position.clone();
   const info = painting.userData; // Предполагаем, что информация хранится здесь
+ 
   const infoElement = document.getElementById('painting-info');
 
   infoElement.innerHTML = `
     <h3>${info.title}</h3>
-    <p>Artist: ${info.artist}</p>
-    <p>Description: ${info.description}</p>
-    <p>Year: ${info.year}</p>
+    <p> ${info.size}</p>
+   
+      <p> ${info.place}</p>
+      <br>
+      <div class='global-wrapper'>
+      <div class="desc-wrapper">
+        <p id='fr'>${info.fr}</p>
+        <p id='eng' style='display:none'> ${info.en}</p>
+      </div>
+       
+    </div>
+   
+   
+     
   `;
   infoElement.classList.add('show');
 
@@ -38,6 +51,8 @@ if (painting.userData.etudes.modelKey) {
     currentVisibleModel = model;
   }
 }
+
+updateLanguage();
   }
 
   // camera.lookAt(position);
