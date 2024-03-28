@@ -14,7 +14,6 @@ Nous tenons à remercier toutes les personnes qui ont contribué au succès de c
 
 - Oriane Poret, pour son apport essentiel à notre connaissance de Rosa Bonheur.
 - Phillipe Gambette, pour avoir fourni les ressources nécessaires à notre réalisation.
-- La développeuse de l'exposition, Daria Iarovaia, pour son travail acharné et sa créativité.
 - Emilian Kasemi, dont la vidéo explicative a été une source d'inspiration et d'apprentissage précieuse pour ce projet. Vous pouvez le retrouver sur [GitHub](https://github.com/theringsofsaturn).
 
 ## Technologie
