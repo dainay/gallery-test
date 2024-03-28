@@ -1,5 +1,7 @@
 # Exposition Virtuelle "À Travers Leurs Yeux"
 
+https://github.com/dainay/gallery-test.git
+
 Un groupe de 6 étudiants en deuxième année du BUT Métiers du Multimédia et de l’Internet a réalisé un projet ambitieux : la création d'une exposition virtuelle intitulée "À travers leurs yeux". Cette exposition est le fruit d'une collaboration entre 3 étudiants du parcours développement web et 3 étudiants du parcours création numérique, rassemblés sous l'égide d'une agence de communication fictive nommée Kléio, dédiée à la valorisation des femmes artistes.
 
 ## Objectif
