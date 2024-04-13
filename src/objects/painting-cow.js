@@ -20,7 +20,7 @@ export const loadPaintingcowModel = (scene, callback) => {
         interactive: true,
         title: "<h2>Portrait de Dubufe</h2>",
         titleeng: "<h2>Portrait of Dubufe</h2>",
-        text: "<p>Ce portrait de Rosa Bonheur a été réalisé par Édouard-Louis Dubufe en 1857, célèbre peintre de l’époque. Il peint alors Bonheur droite, un pinceau et un livre d’études dans les mains, appuyée à une commode. Toutefois, en voyant l’œuvre finale, Bonheur n’était pas satisfaite et préféra repeindre une vache au-dessus du meuble en bois dessiné par Dubufe. Cette dernière version du portrait lui ressemblait bien plus, selon elle.</p>",
+        text: "<p>Ce portrait de Rosa Bonheur a été réalisé en 1857 par Édouard-Louis Dubufe, célèbre peintre de l’époque. Il peint alors Bonheur droite, un pinceau et un livre d’études dans les mains, appuyée à une commode. Toutefois, en voyant l’œuvre finale, Bonheur n’était pas satisfaite et préféra repeindre une vache au-dessus du meuble en bois dessiné par Dubufe. Cette dernière version du portrait lui ressemblait bien plus, selon elle.</p>",
         texteng: 'This portrait of Rosa Bonheur was painted by Édouard-Louis Dubufe in 1857, a famous painter of the time. He depicted Bonheur standing upright, holding a paintbrush and a study book, leaning against a chest of drawers. However, upon seeing the final work, Bonheur was not satisfied and preferred to repaint a cow above the wooden furniture drawn by Dubufe. According to her, this latter version of the portrait resembled her much more.',
       
         position: {

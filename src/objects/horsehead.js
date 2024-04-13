@@ -15,8 +15,8 @@ export const loadHorseheadModel = (scene, callback) => {
         interactive: true,
         title: "<h2>Les têtes des animaux</h2>",
         titleeng: "<h2>Animals' heads</h2>",
-        text: "<p>  Rosa Bonheur had a great number of pets at home : dogs, horses, sheep, deer, and even lions. After their death, she had them taxidermied. This practice may seem very strange today, but in her time, it was more common : through this, Bonheur could keep the animals she loved so much close to her. </p>",
-        texteng: "  Rosa Bonheur had a great number of pets at home : dogs, horses, sheep, deer, and even lions. After their death, she had them taxidermied. This practice may seem very strange today, but in her time, it was more common : through this, Bonheur could keep the animals she loved so much close to her. </p>",
+        text: "<p>  Rosa Bonheur avait un grand nombre d'animaux domestiques chez elle : des chiens, des chevaux, des moutons, des cerfs, et même des lions. Après leur mort, elle les faisait empailler. Cette pratique peut sembler très étrange aujourd'hui, mais à son époque, elle était plus courante : ainsi, Bonheur pouvait garder près d'elle les animaux qu'elle aimait telement. </p>",
+        texteng: "<p> Rosa Bonheur had a great number of pets at home : dogs, horses, sheep, deer, and even lions. After their death, she had them taxidermied. This practice may seem very strange today, but in her time, it was more common : through this, Bonheur could keep the animals she loved so much close to her. </p>",
       
         position: {
           top: 30,

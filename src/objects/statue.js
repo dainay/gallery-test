@@ -15,8 +15,8 @@ export const loadStatueModel = (scene, callback) => {
         interactive: true,
         title: "<h2>Statue d'une vache </h2>",
         titleeng: "<h2>Statue of a bull</h2>",
-        text: "<p> Rosa Bonheur est née dans une famille d’artistes. Son activité principale était la peinture et le crayonner, mais elle avait également de grandes compétences en sculpture. Contrairement à son frère qui était sculpteur, Rosa Bonheur utilisait ce talent surtout pour étudier l’anatomie des animaux en trois dimensions. </p>",
-        texteng: '<p> Rosa Bonheur was born into a family of artists. All her brothers and sisters were artists too, but she was the most successful. Unlike her brother who was a sculptor, Rosa Bonheur mainly used this talent to study the anatomy of animals in 3D.</p>',
+        text: "<p> Rosa Bonheur est née dans une famille d’artistes. Son activité principale était la peinture et le dessin, mais elle avait également de grandes compétences en sculpture. Contrairement à son frère qui était sculpteur, Rosa Bonheur utilisait ce talent surtout pour étudier l’anatomie des animaux en trois dimensions. </p>",
+        texteng: '<p> Rosa Bonheur was born into a family of artists. Her main activities were painting and drawing, but she also had great skills in sculpture. Unlike her brother, who was a sculptor, Rosa Bonheur primarily used this talent to study the anatomy of animals in three dimensions.</p>',
       
         position: {
           top: 30,

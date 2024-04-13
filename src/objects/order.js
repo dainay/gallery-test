@@ -16,9 +16,9 @@ export const loadOrderModel = (scene, callback) => {
         name: 'order',
         interactive: true,
         title: "<h2>Légion d'honneur</h2>",
-        titleeng: "<h2>Legion of honner</h2>",
-        text: "<p>Rosa Bonheur reçoit la légion d’honneur le 10 juin 1865, de la main de l’impératrice Eugénie. En lui offrant, cette dernière lui dit “Enfin, vous voilà chevalier. Je suis si heureuse d’être la marraine de la première femme artiste qui reçoit cette haute distinction. J’ai voulu que le dernier acte de ma régence fût consacré à montrer qu’à mes yeux le génie n’a pas de sexe”.</p>",
-        texteng: "Rosa Bonheur received the Legion of Honor on June 10, 1865, from the hand of French Empress Eugénie. While giving it to her, the Empress said, 'At last, you are a knight. I am so happy to be the godmother of the first female artist to receive this high distinction. I wanted the final act of my regency to demonstrate that in my eyes, genius knows no gender.",
+        titleeng: "<h2>Legion of honor</h2>",
+        text: "<p>Rosa Bonheur reçoit la légion d’honneur le 10 juin 1865, de la main de l’impératrice Eugénie.  En la lui offrant, cette dernière lui dit &nbsp;: «&nbsp;Enfin, vous voilà chevalier. Je suis si heureuse d’être la marraine de la première femme artiste qui reçoit cette haute distinction. J’ai voulu que le dernier acte de ma régence fût consacré à montrer qu’à mes yeux le génie n’a pas de sexe&nbsp;: «&nbsp;.</p>",
+        texteng: 'Rosa Bonheur received the Legion of Honor on June 10, 1865, from the hand of French Empress Eugénie. While giving it to her, the Empress said, "At last, you are a knight. I am so happy to be the godmother of the first female artist to receive this high distinction. I wanted the final act of my regency to demonstrate that in my eyes, genius knows no gender."',
       
         position: {
           top: 50,
