@@ -82,7 +82,7 @@ function onClick(camera, objects, renderer, scene) {
             .start();
 
           setTimeout(() => {
-            window.location.href = "FIRE LINK";
+            window.location.href = "firegame.html";
           }, 5000);
           return;
         }
