@@ -6,7 +6,7 @@ let camera;
 let controls;
 let renderer;
 
-scene.background = new THREE.Color(0xaaaaaa);
+scene.background = new THREE.Color(0x000000);
 
 const geometry = new THREE.DodecahedronGeometry(0.06, 6);
 let cube;
@@ -15,7 +15,7 @@ let cubes = []; //to stock all the cubes to use them for the animation
 
 
 let n = 0;
-while (n < 200) {
+while (n < 2000) {
     n++; 
 const material = new THREE.MeshBasicMaterial( { color: 'white' } );
 const cube = new THREE.Mesh( geometry, material );
@@ -46,7 +46,7 @@ export const setupScene = () => {
 
   renderer = new THREE.WebGLRenderer({ antialias: false }); // create a WebGLRenderer and set its antialias property to true to enable antialiasing which smooths out the edges of what is rendered
   renderer.setSize(window.innerWidth, window.innerHeight); // set the size of the renderer to the inner width and height of the window (the browser window)
-  renderer.setClearColor(0xffffff, 1); // set the background color of the renderer to white
+  renderer.setClearColor(0x000000, 1); // set the background color of the renderer to white
   document.body.appendChild(renderer.domElement); // append the renderer to the body of the document (the <canvas> element that the renderer uses will be added to the body)
 
   renderer.shadowMap.enabled = true; // enable shadow mapping

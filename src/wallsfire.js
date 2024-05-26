@@ -18,7 +18,7 @@ export function createWalls(scene) {
         new THREE.BoxGeometry(40, 40, 0.001),
         blackMaterial
     );
-    backWall.position.z = 20;
+    backWall.position.z = 220;
 
     wallGroup.add( backWall);
 
