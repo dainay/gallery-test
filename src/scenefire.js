@@ -8,29 +8,72 @@ let renderer;
 
 scene.background = new THREE.Color(0x000000);
 
-const geometry = new THREE.DodecahedronGeometry(0.06, 6);
-let cube;
+// const geometry = new THREE.DodecahedronGeometry(0.06, 6);
+// let cube;
 
-let cubes = []; //to stock all the cubes to use them for the animation
+// let cubes = []; //to stock all the cubes to use them for the animation
 
 
-let n = 0;
-while (n < 2000) {
-    n++; 
-const material = new THREE.MeshBasicMaterial( { color: 'white' } );
-const cube = new THREE.Mesh( geometry, material );
+// let n = 0;
+// while (n < 2000) {
+//     n++; 
+// const material = new THREE.MeshBasicMaterial( { color: 'white' } );
+// const cube = new THREE.Mesh( geometry, material );
 
-cubes.push( cube ); //to add this cube at the end of the table
-let random1 = Math.floor(Math.random() * 220 - 160);
-let random2 =Math.floor(Math.random() * 150 - 75);
-let random3 =Math.floor(Math.random() * 170 - 145);
-console.log(random1,random2,random3);
+// cubes.push( cube ); //to add this cube at the end of the table
+// let random1 = Math.floor(Math.random() * (1160 - (-220)) + (-220));
+// let random2 = Math.floor(Math.random() * 150 - 75);
+// let random3 = Math.floor(Math.random() * (225 - (-40)) + (-40));
+// console.log(random1,random2,random3);
 
-    cube.rotation.set(random1,random2,random3);
-    cube.position.set(random1,random2,random3);
+//     cube.rotation.set(random1,random2,random3);
+//     cube.position.set(random1,random2,random3);
 
-    scene.add(cube);}
+//     scene.add(cube);}
+function isInsideRoom(x, y, z, roomBounds) {
+  return (
+      x >= roomBounds.xMin && x <= roomBounds.xMax &&
+      y >= roomBounds.yMin && y <= roomBounds.yMax &&
+      z >= roomBounds.zMin && z <= roomBounds.zMax
+  );
+}
 
+// Функция для генерации случайных координат вне границ комнаты
+function getRandomPositionOutsideRoom(roomBounds) {
+  let x, y, z;
+  do {
+    x = Math.random() * (1200 - (-300)) + (-300); // Увеличиваем диапазон по X
+    y = Math.random() * (200 - (-100)) + (-100); // Увеличиваем диапазон по Y
+    z = Math.random() * (500 - (-500)) + (-500);
+  } while (isInsideRoom(x, y, z, roomBounds));
+  return { x, y, z };
+}
+
+export function createStars(scene, numStars, roomBounds) {
+  const geometry = new THREE.SphereGeometry(0.2, 15, 15);
+  geometry.thetaStart = 1.5
+  geometry.thetaLeength = 4.4 // Настраиваем геометрию звезды
+  const material = new THREE.MeshBasicMaterial({ color: 0xffffff }); // Настраиваем материал звезды
+
+  for (let i = 0; i < numStars; i++) {
+      const star = new THREE.Mesh(geometry, material);
+      const position = getRandomPositionOutsideRoom(roomBounds);
+      star.position.set(position.x, position.y, position.z);
+      scene.add(star);
+  }
+}
+
+// Пример использования
+const roomBounds = {
+  xMin: -15,
+  xMax: 100,
+  yMin: -2,
+  yMax: 40,
+  zMin: -60,
+  zMax: 250
+};
+
+createStars(scene, 10000, roomBounds);
 
 
 export const setupScene = () => {

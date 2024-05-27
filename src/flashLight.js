@@ -6,7 +6,7 @@ export function setupFlashlight(camera, scene) {
     flashlight.angle = Math.PI / 8;
     flashlight.penumbra = 1;
     flashlight.decay = 1.2;
-    flashlight.distance = 150;
+    flashlight.distance = 180;
 
     flashlight.position.set(0, 0, 0); // Позиционируем свет в центре камеры
     camera.add(flashlight); // Присоединяем свет к камере

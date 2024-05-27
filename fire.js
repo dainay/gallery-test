@@ -33,7 +33,7 @@ const walls = createWalls(scene, textureLoader);
 const floor = setupFloor(scene);
 // const ceiling = createCeiling(scene, textureLoader);
 const paintings = createPaintings(scene, textureLoader);
-const lighting = setupLighting(scene, paintings);
+// const lighting = setupLighting(scene, paintings);
 
 createBoundingBoxes(walls);
 
